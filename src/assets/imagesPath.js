@@ -1,0 +1,1 @@
+export { default as product1 } from "../assets/images/product1.png";

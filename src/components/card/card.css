@@ -1,0 +1,100 @@
+.cardInner {
+  border: 0.1rem solid #007078;
+  border-radius: 0.5rem;
+  background-color: #eef7ff;
+  padding: 1rem;
+}
+.cardInner .topBoxWrap {
+  width: 100%;
+  height: 23.9rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 1rem 2rem;
+}
+.cardInner .topBoxWrap .topWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.cardInner .topBoxWrap .topWrap .offerTagWrap {
+  background-color: #016cb0;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8rem 1.5rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+.cardInner .topBoxWrap .topWrap .offerTagWrap span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+.cardInner .topBoxWrap .proImgWrap {
+  width: 100%;
+  height: 17.6rem;
+}
+.cardInner .topBoxWrap .proImgWrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cardInner .productDetailsWrap {
+  padding-top: 1.2rem;
+}
+.cardInner .productDetailsWrap h6 {
+  font-size: 1.8rem;
+  color: #1c2c2d;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.cardInner .productDetailsWrap p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #656565;
+  width: 75%;
+  margin-bottom: 1rem;
+}
+.cardInner .bottomBoxWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardInner .bottomBoxWrap h6 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #007078;
+}
+
+.col-md-3 {
+  position: relative;
+}
+
+.wishlistWrap {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #eef7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  z-index: 1;
+  cursor: pointer;
+}
+.wishlistWrap.bgAdd {
+  background-color: red;
+}
+.wishlistWrap.bgAdd svg path {
+  fill: #fff;
+}/*# sourceMappingURL=card.css.map */

@@ -1,0 +1,49 @@
+.actionBtn {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.actionBtn:focus {
+  background-color: #00575d !important;
+}
+.actionBtn:hover {
+  background-color: #00575d !important;
+  color: #fff !important;
+}
+.actionBtn:hover span svg path {
+  fill: #fff;
+}
+.actionBtn .iconSvgWrap.hamb .cartIco {
+  display: none;
+}
+.actionBtn .iconSvgWrap.cartIcon .hamburger {
+  display: none;
+}
+
+.linkBtn {
+  display: flex;
+  border: 0.1rem solid #e3a835;
+  height: 4.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 1.52rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  gap: 1rem;
+  line-height: 0;
+}
+.linkBtn .arrow.transArrow {
+  display: none;
+}/*# sourceMappingURL=cta.css.map */

@@ -1,0 +1,78 @@
+@import "../../assets/scss/media";
+#topBar {
+  background-color: #e3a835;
+  padding: 0.5rem 0;
+  .topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include x-767-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .box {
+    width: fit-content;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include x-767-tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      li {
+        padding: 0 1.2rem;
+        border-right: 0.1rem solid #ffffff94;
+        display: flex;
+        gap: 0.5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #000;
+        &:first-child{
+          padding-left: 0;
+        }
+        @include x-767-tablet {
+          border: 0;
+        }
+        a {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: #000;
+        }
+        &:last-child {
+          padding-right: 0;
+          border: 0;
+        }
+      }
+    }
+    &.topRightBox {
+      ul {
+        @include x-767-tablet {
+          gap: 0.5rem;
+        }
+        li {
+          gap: 0;
+          @include x-767-tablet {
+            padding: 0;
+          }
+          &:last-child {
+            span {
+              text-align: right;
+              font-size: 1.4rem;
+              color: #000;
+            }
+            p {
+              a {
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

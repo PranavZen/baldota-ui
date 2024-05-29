@@ -1,0 +1,79 @@
+#topBar {
+  background-color: #e3a835;
+  padding: 0.5rem 0;
+}
+#topBar .topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  #topBar .topRow {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+#topBar .box {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#topBar .box ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  #topBar .box ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+#topBar .box ul li {
+  padding: 0 1.2rem;
+  border-right: 0.1rem solid rgba(255, 255, 255, 0.5803921569);
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+}
+#topBar .box ul li:first-child {
+  padding-left: 0;
+}
+@media (max-width: 767px) {
+  #topBar .box ul li {
+    border: 0;
+  }
+}
+#topBar .box ul li a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+}
+#topBar .box ul li:last-child {
+  padding-right: 0;
+  border: 0;
+}
+@media (max-width: 767px) {
+  #topBar .box.topRightBox ul {
+    gap: 0.5rem;
+  }
+}
+#topBar .box.topRightBox ul li {
+  gap: 0;
+}
+@media (max-width: 767px) {
+  #topBar .box.topRightBox ul li {
+    padding: 0;
+  }
+}
+#topBar .box.topRightBox ul li:last-child span {
+  text-align: right;
+  font-size: 1.4rem;
+  color: #000;
+}
+#topBar .box.topRightBox ul li:last-child p a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+}/*# sourceMappingURL=header.css.map */
