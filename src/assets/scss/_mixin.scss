@@ -17,9 +17,9 @@
     &:hover {
       background-color: #00575d !important;
       color: #fff !important;
-      span{
-        svg{
-          path{
+      span {
+        svg {
+          path {
             fill: #fff;
           }
         }
@@ -60,6 +60,78 @@
       &.transArrow {
         display: none;
       }
+    }
+  }
+}
+
+@mixin commonPara {
+  .commonPara {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #656565;
+  }
+}
+@mixin commonTitle {
+  .sectionTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 3rem;
+    .highlightText {
+      color: #ffa700;
+    }
+  }
+}
+
+@mixin commonSlider {
+  .sliderContainer {
+    padding: 0;
+    .slick-slider {
+      .slick-list {
+        margin: 0 -10px;
+        padding: 1rem 0;
+        .slick-track {
+          .slick-slide {
+            padding: 0 10px;
+            .ddd{
+              position: relative;
+            }
+          }
+        }
+      }
+      .slick-dots {
+        bottom: -40px;
+        li {
+          &.slick-active {
+            button {
+              background-color: #ffa700;
+            }
+          }
+          button {
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 5rem;
+            padding: 0;
+            background-color: #135257;
+            &::before {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin commonSpanBox {
+  .dealBox {
+    width: max-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    span {
+      font-size: 1.6rem;
+      font-weight: 600;
     }
   }
 }

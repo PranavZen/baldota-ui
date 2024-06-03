@@ -1,0 +1,53 @@
+.custNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.custNav .navLeftBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custNav .navbar-collapse .navbar-nav {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.custNav .navbar-collapse .navbar-nav .nav-item.cartMenu::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 4%;
+  width: 0.2rem;
+  height: 55%;
+  background: #cbcbcb;
+}
+.custNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #919191;
+  position: relative;
+  padding: 0;
+}
+.custNav .navbar-collapse .navbar-nav .nav-item .nav-link span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: #007078;
+  border-radius: 5rem;
+  position: relative;
+}
+.custNav .navbar-collapse .navbar-nav .nav-item .nav-link span.cartBox::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 5rem;
+  background: #27ED8E;
+}/*# sourceMappingURL=navbar.css.map */

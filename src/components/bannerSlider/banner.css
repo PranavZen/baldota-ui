@@ -1,0 +1,73 @@
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+}
+
+.overlay {
+  width: 37%;
+  position: absolute;
+  left: 7%;
+}
+.overlay .mainText {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.overlay .mainText span {
+  color: #ffa700;
+}
+.overlay .subText {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.overlay .subText span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffa700;
+}
+
+.dots {
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #135257;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ffa700;
+}/*# sourceMappingURL=banner.css.map */

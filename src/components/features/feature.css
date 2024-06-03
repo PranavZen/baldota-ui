@@ -1,0 +1,19 @@
+#featureSection {
+  padding: 5rem 0 0;
+}
+#featureSection .fetBoxWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#featureSection .fetBoxWrap .fetContentBox h5 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #007078;
+}
+#featureSection .fetBoxWrap .fetContentBox p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #656565;
+}/*# sourceMappingURL=feature.css.map */

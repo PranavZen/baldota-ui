@@ -1,1 +1,15 @@
+export { default as logo } from "../assets/images/logo.svg";
 export { default as product1 } from "../assets/images/product1.png";
+export { default as smallproImg } from "../assets/images/small-pro-img.png";
+export { default as bannerImg } from "../assets/images/bannerimg.png";
+export { default as grid1 } from "../assets/images/grid1.png";
+export { default as grid2 } from "../assets/images/grid2.png";
+export { default as grid3 } from "../assets/images/grid3.png";
+export { default as partner1 } from "../assets/images/partner1.png";
+export { default as partner2 } from "../assets/images/partner2.png";
+export { default as partner3 } from "../assets/images/partner3.png";
+export { default as partner4 } from "../assets/images/partner4.png";
+export { default as partner5 } from "../assets/images/partner5.png";
+export { default as partner6 } from "../assets/images/partner6.png";
+export { default as factoryImg } from "../assets/images/factoryimg.png";
+export { default as fooLogo } from "../assets/images/footerlogo.png";

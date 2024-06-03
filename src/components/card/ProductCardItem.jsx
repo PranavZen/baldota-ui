@@ -7,12 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectWishlist } from "../../redux/selectors";
 import { toggleWishlist } from "../../redux/actions";
 import "../card/card.css";
-const ProductCardItem = ({
-  item,
-  index,
-  isWishlisted,
-
-}) => {
+const ProductCardItem = ({ item, index, isWishlisted }) => {
   const dispatch = useDispatch();
   const wishlist = useSelector(selectWishlist);
 
@@ -26,7 +21,7 @@ const ProductCardItem = ({
     : "";
 
   return (
-    <div className="col-md-3" key={index}>
+    <div className="ddd" key={index}>
       <div
         className={isWishlisted ? "wishlistWrap bgAdd" : "wishlistWrap"}
         onClick={() => handleClick(index)}
@@ -46,33 +41,36 @@ const ProductCardItem = ({
           </svg>
         </span>
       </div>
-      <Link to={`/products/${slug}`} rel="noopener noreferrer">
-        <div className="cardInner">
-          <div className="topBoxWrap">
-            <div className="topWrap">
-              <div className="offerTagWrap">
-                <span>{item.offerPrice}% Off</span>
-              </div>
+
+      <div className="cardInner">
+        <div className="topBoxWrap">
+          <div className="topWrap">
+            <div className="offerTagWrap">
+              <span>{item.offerPrice}% Off</span>
             </div>
+          </div>
+          <Link to={`/products/${slug}`} rel="noopener noreferrer">
             <div className="proImgWrap">
               <img src={item.productImage} alt={item.name} />
             </div>
-          </div>
+          </Link>
+        </div>
+        <Link to={`/products/${slug}`} rel="noopener noreferrer">
           <div className="productDetailsWrap">
             <h6>{item.name}</h6>
             <p>{item.description}</p>
           </div>
-          <div className="bottomBoxWrap">
-            <h6>₹ {item.price}/-</h6>
-            <SquareBtn
-              sBtnName="All Products"
-              btnBgColor="#FFA700"
-              color="#000000"
-              className="iconSvgWrap cartIcon"
-            />
-          </div>
+        </Link>
+        <div className="bottomBoxWrap">
+          <h6>₹ {item.price}/-</h6>
+          <SquareBtn
+            sBtnName="All Products"
+            btnBgColor="#FFA700"
+            color="#000000"
+            className="iconSvgWrap cartIcon"
+          />
         </div>
-      </Link>
+      </div>
     </div>
   );
 };

@@ -16,30 +16,41 @@ function InputSelectCombo() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Input: ${inputValue}`);
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
+      <div className="comboInputWrap">
         <select
           ref={selectRef}
           value={selectedOptionText ? selectedOptionText : "default"}
           onChange={handleSelectChange}
-          className="custom_select"
+          className="form-select"
         >
           <option value="default" disabled>
             All Categories
           </option>
-          <option value="Option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
-          <option value="Option 3">Option 3</option>
+          <option value="Option 1">Fleet & Specialty Hoses</option>
+          <option value="Option 2">Flange Adapters</option>
+          <option value="Option 3">NPT Female Swivel (NPSM)</option>
+          <option value="Option 4">Flange Components</option>
+          <option value="Option 5">Flushface NPT</option>
+          <option value="Option 6">Flushface - ISO 16028</option>
+          <option value="Option 7">Flushface ORB</option>
+          <option value="Option 8">Adapters & Fittings</option>
         </select>
+          <span className="deviderLine"></span>
+        <input
+          type="text"
+          ref={inputRef}
+          value={inputValue}
+          readOnly
+          className="form-control"
+        />
       </div>
-      <div>
-        <input type="text" ref={inputRef} value={inputValue} readOnly />
-      </div>
-      <button type="submit">Submit</button>
+      <button type="submit" className="searchBtn">
+        Search
+      </button>
     </form>
   );
 }

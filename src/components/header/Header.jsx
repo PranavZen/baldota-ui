@@ -1,12 +1,15 @@
 import React from "react";
 import TopHeader from "./TopHeader";
+import Navbar from "./navbar/Navbar";
 import "./header.css";
-import InputSelectCombo from "../inputselectcombo/InputSelectCombo";
 function Header() {
   return (
     <>
       <TopHeader />
-      <InputSelectCombo/>
+      <header id="headerSection">
+        <Navbar />
+      </header>
+     
     </>
   );
 }

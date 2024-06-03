@@ -1,0 +1,60 @@
+#footerSection {
+  background-color: #1f1414;
+  padding: 4rem 0;
+  .topSec {
+    border-bottom: 0.1rem solid #888888;
+    padding-bottom: 3rem;
+  }
+  .footerTopWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .leftTopWrap {
+      h6 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #979797;
+      }
+    }
+  }
+  .midSec {
+    padding: 3rem 0;
+    border-bottom: 0.1rem solid #888888;
+    .wrap {
+      .foologoWrap {
+        width: fit-content;
+        margin-bottom: 1rem;
+      }
+      .commonPara {
+        margin-bottom: 2rem;
+        color: #979797;
+      }
+      .socialLinksWrap {
+        display: flex;
+        gap: 1rem;
+        width: fit-content;
+      }
+      .sectionTitle {
+        font-size: 2.4rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      .fooLinks{
+        li{
+            line-height: 2;
+            a{
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: #979797;
+            }
+        }
+      }
+    }
+  }
+}

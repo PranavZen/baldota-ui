@@ -1,0 +1,61 @@
+#newsletterSection {
+  margin-bottom: 11rem;
+}
+#newsletterSection .bgWrpper {
+  background-image: url(../../assets/images/newsletterBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 26.1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 3rem 6rem;
+}
+#newsletterSection .bgWrpper .leftBox {
+  width: 44%;
+}
+#newsletterSection .bgWrpper .leftBox .sectionTitle {
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+#newsletterSection .bgWrpper .leftBox form {
+  margin-bottom: 1.5rem;
+}
+#newsletterSection .bgWrpper .leftBox form .inputWrap {
+  position: relative;
+}
+#newsletterSection .bgWrpper .leftBox form .inputWrap input {
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #555555;
+}
+#newsletterSection .bgWrpper .leftBox form .inputWrap input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+#newsletterSection .bgWrpper .leftBox form .inputWrap button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 4.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 3rem;
+  background-color: #ffa700;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: 0;
+}
+#newsletterSection .bgWrpper .leftBox .commonPara {
+  color: #d9d9d9;
+}/*# sourceMappingURL=newslwtter.css.map */
