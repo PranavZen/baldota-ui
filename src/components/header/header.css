@@ -2,6 +2,11 @@
   background-color: #e3a835;
   padding: 0.5rem 0;
 }
+@media (max-width: 1024px) {
+  #topBar {
+    padding: 0.5rem 1.5rem;
+  }
+}
 #topBar .topRow {
   display: flex;
   justify-content: space-between;
@@ -40,6 +45,11 @@
 #topBar .box ul li:first-child {
   padding-left: 0;
 }
+@media (max-width: 1024px) {
+  #topBar .box ul li {
+    font-size: 1.4rem;
+  }
+}
 @media (max-width: 767px) {
   #topBar .box ul li {
     border: 0;
@@ -49,6 +59,11 @@
   font-size: 1.6rem;
   font-weight: 500;
   color: #000;
+}
+@media (max-width: 1024px) {
+  #topBar .box ul li a {
+    font-size: 1.4rem;
+  }
 }
 #topBar .box ul li:last-child {
   padding-right: 0;
@@ -72,12 +87,28 @@
   font-size: 1.4rem;
   color: #000;
 }
+@media (max-width: 1024px) {
+  #topBar .box.topRightBox ul li:last-child span {
+    font-size: 1.2rem;
+  }
+}
 #topBar .box.topRightBox ul li:last-child p a {
   font-size: 1.6rem;
   font-weight: 600;
   color: #000;
 }
+@media (max-width: 1024px) {
+  #topBar .box.topRightBox ul li:last-child p a {
+    font-size: 1.4rem;
+  }
+}
 
 #headerSection {
   padding: 1.5rem 0;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  #headerSection {
+    padding: 0.5rem 1.5rem;
+  }
 }/*# sourceMappingURL=header.css.map */

@@ -1,3 +1,4 @@
+@import '../../assets/scss/media';
 form {
   position: relative;
   width: 100%;
@@ -14,6 +15,9 @@ form {
       font-size: 1.4rem;
       font-weight: 400;
       color: #000;
+      @include d-desktop{
+        display: none;
+      }
       &:focus {
         outline: none;
         box-shadow: none;
@@ -27,6 +31,9 @@ form {
       height: 50%;
       width: 0.1rem;
       background-color: #cbcbcb;
+      @include d-desktop{
+        display: none;
+      }
     }
     .form-control {
       height: 4.5rem;
@@ -36,6 +43,9 @@ form {
       font-size: 1.4rem;
       font-weight: 400;
       color: #000;
+      @include d-desktop{
+        padding-left: 1.5rem;
+      }
       &:focus {
         outline: none;
         box-shadow: none;

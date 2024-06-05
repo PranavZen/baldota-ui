@@ -2,6 +2,9 @@
 #topBar {
   background-color: #e3a835;
   padding: 0.5rem 0;
+  @include d-desktop {
+    padding: 0.5rem 1.5rem;
+  }
   .topRow {
     display: flex;
     justify-content: space-between;
@@ -30,8 +33,11 @@
         font-size: 1.6rem;
         font-weight: 500;
         color: #000;
-        &:first-child{
+        &:first-child {
           padding-left: 0;
+        }
+        @include d-desktop {
+          font-size: 1.4rem;
         }
         @include x-767-tablet {
           border: 0;
@@ -40,6 +46,9 @@
           font-size: 1.6rem;
           font-weight: 500;
           color: #000;
+          @include d-desktop {
+            font-size: 1.4rem;
+          }
         }
         &:last-child {
           padding-right: 0;
@@ -62,12 +71,18 @@
               text-align: right;
               font-size: 1.4rem;
               color: #000;
+              @include d-desktop {
+                font-size: 1.2rem;
+              }
             }
             p {
               a {
                 font-size: 1.6rem;
                 font-weight: 600;
                 color: #000;
+                @include d-desktop {
+                  font-size: 1.4rem;
+                }
               }
             }
           }
@@ -77,6 +92,10 @@
   }
 }
 
-#headerSection{
+#headerSection {
   padding: 1.5rem 0;
+  position: relative;
+  @include d-desktop {
+    padding: 0.5rem 1.5rem;
+  }
 }

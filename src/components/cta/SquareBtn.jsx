@@ -1,10 +1,11 @@
 import React from "react";
 import "../cta/cta.css";
-function SquareBtn({ btnBgColor, color, sBtnName, className }) {
+function SquareBtn({ btnBgColor, color, sBtnName, className, onClick }) {
   return (
     <button
       className="actionBtn"
       style={{ backgroundColor: btnBgColor, color: color }}
+      onClick={onClick}
     >
       <span className={className}>
         <svg

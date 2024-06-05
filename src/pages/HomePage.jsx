@@ -1,7 +1,7 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import BannerSlider from "../components/bannerSlider/BannerSlider";
 import FeaturesList from "../components/features/FeaturesList";
-import { useDispatch, useSelector } from "react-redux";
 import { selectWishlist } from "../redux/selectors";
 import { toggleWishlist } from "../redux/actions";
 import ProductCardItem from "../components/card/ProductCardItem";
@@ -16,24 +16,17 @@ import SpanBox from "../components/spanbox/SpanBox";
 import OurPartner from "../components/ourpartner/OurPartner";
 import Accordion from "../components/faqaccordion/Accordion";
 import NewsLetter from "../components/newsletter/NewsLetter";
+
 function HomePage() {
   const dispatch = useDispatch();
   const wishlist = useSelector(selectWishlist);
 
   const handleClick = (index) => {
     dispatch(toggleWishlist(index));
-    dispatch(toggleWishlist(index));
   };
+
   return (
     <>
-      {/* <SquareBtn
-        sBtnName="All Products"
-        btnBgColor="#007078"
-        color="#fff"
-        className="iconSvgWrap hamb"
-      />
-      <RoundBtn rBtnLink="#" rBtnName="Contact Us" color="green" fill="green" /> */}
-
       <BannerSlider />
       <FeaturesList />
       <div id="productSliderSection" className="productSliderSection">
@@ -51,8 +44,6 @@ function HomePage() {
                       index={index}
                       isWishlisted={isWishlisted}
                       handleClick={() => handleClick(index)}
-                      dispatch={dispatch}
-                      wishlist={wishlist}
                     />
                   );
                 })}
@@ -82,16 +73,14 @@ function HomePage() {
               <SectionTitle title="New" spanTitle="Products" />
               <CommonSlider>
                 {newProductData.map((item, index) => {
-                  const isWishlisted = wishlist.includes(index);
+                  const isWishlisted = wishlist.includes(index + data.length);
                   return (
                     <ProductCardItem
                       key={index}
                       item={item}
-                      index={index}
+                      index={index + data.length}
                       isWishlisted={isWishlisted}
-                      handleClick={() => handleClick(index)}
-                      dispatch={dispatch}
-                      wishlist={wishlist}
+                      handleClick={() => handleClick(index + data.length)}
                     />
                   );
                 })}

@@ -29,10 +29,20 @@
   position: absolute;
   left: 7%;
 }
+@media (max-width: 1024px) {
+  .overlay {
+    width: 45%;
+  }
+}
 .overlay .mainText {
   font-size: 5rem;
   font-weight: 700;
   color: #fff;
+}
+@media (max-width: 1024px) {
+  .overlay .mainText {
+    font-size: 4rem;
+  }
 }
 .overlay .mainText span {
   color: #ffa700;
@@ -43,10 +53,20 @@
   color: #fff;
   margin-bottom: 2rem;
 }
+@media (max-width: 1024px) {
+  .overlay .subText {
+    font-size: 1.4rem;
+  }
+}
 .overlay .subText span {
   font-size: 2rem;
   font-weight: 700;
   color: #ffa700;
+}
+@media (max-width: 1024px) {
+  .overlay .subText span {
+    font-size: 1.6rem;
+  }
 }
 
 .dots {

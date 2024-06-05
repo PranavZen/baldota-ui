@@ -18,6 +18,11 @@ form .comboInputWrap .form-select {
   font-weight: 400;
   color: #000;
 }
+@media (max-width: 1024px) {
+  form .comboInputWrap .form-select {
+    display: none;
+  }
+}
 form .comboInputWrap .form-select:focus {
   outline: none;
   box-shadow: none;
@@ -31,6 +36,11 @@ form .comboInputWrap .deviderLine {
   width: 0.1rem;
   background-color: #cbcbcb;
 }
+@media (max-width: 1024px) {
+  form .comboInputWrap .deviderLine {
+    display: none;
+  }
+}
 form .comboInputWrap .form-control {
   height: 4.5rem;
   border: 0.2rem solid #007078;
@@ -39,6 +49,11 @@ form .comboInputWrap .form-control {
   font-size: 1.4rem;
   font-weight: 400;
   color: #000;
+}
+@media (max-width: 1024px) {
+  form .comboInputWrap .form-control {
+    padding-left: 1.5rem;
+  }
 }
 form .comboInputWrap .form-control:focus {
   outline: none;

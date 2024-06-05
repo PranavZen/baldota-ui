@@ -39,12 +39,11 @@ function InputSelectCombo() {
           <option value="Option 7">Flushface ORB</option>
           <option value="Option 8">Adapters & Fittings</option>
         </select>
-          <span className="deviderLine"></span>
+        <span className="deviderLine"></span>
         <input
           type="text"
           ref={inputRef}
-          value={inputValue}
-          readOnly
+          defaultValue={inputValue}
           className="form-control"
         />
       </div>

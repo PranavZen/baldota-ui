@@ -41,18 +41,47 @@
         width: fit-content;
       }
       .sectionTitle {
-        font-size: 2.4rem;
+        font-size: 2rem;
         color: #fff;
         margin-bottom: 1rem;
       }
-      .fooLinks{
-        li{
-            line-height: 2;
-            a{
-                font-size: 1.6rem;
-                font-weight: 400;
-                color: #979797;
-            }
+      .fooLinks {
+        li {
+          margin-bottom: 1.5rem;
+          span {
+            padding-top: 0.5rem;
+            line-height: 1;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #979797;
+          }
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #979797;
+          }
+        }
+      }
+    }
+  }
+  .copyWriteWrap {
+    padding: 4rem 0 0;
+    .copyRow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #979797;
+        a{
+          color: #979797;
         }
       }
     }

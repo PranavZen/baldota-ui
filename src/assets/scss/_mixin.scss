@@ -1,3 +1,4 @@
+@import "./media";
 @mixin squareBtn {
   .actionBtn {
     width: fit-content;
@@ -11,6 +12,9 @@
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1;
+    @include d-desktop{
+      font-size: 1.4rem;
+    }
     &:focus {
       background-color: #00575d !important;
     }
@@ -56,6 +60,9 @@
     font-weight: 600;
     gap: 1rem;
     line-height: 0;
+    @include d-desktop{
+      font-size: 1.4rem;
+    }
     .arrow {
       &.transArrow {
         display: none;
@@ -69,6 +76,9 @@
     font-size: 1.6rem;
     font-weight: 400;
     color: #656565;
+    @include d-desktop{
+      font-size: 1.4rem;
+    }
   }
 }
 @mixin commonTitle {
@@ -132,6 +142,9 @@
     span {
       font-size: 1.6rem;
       font-weight: 600;
+      @include d-desktop{
+        font-size: 1.4rem;
+      }
     }
   }
 }

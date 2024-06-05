@@ -147,6 +147,11 @@ input {
   font-weight: 400;
   color: #656565;
 }
+@media (max-width: 1024px) {
+  .commonPara {
+    font-size: 1.4rem;
+  }
+}
 
 .dealBox {
   width: -moz-max-content;
@@ -158,6 +163,11 @@ input {
 .dealBox span {
   font-size: 1.6rem;
   font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .dealBox span {
+    font-size: 1.4rem;
+  }
 }
 
 #popularProductsSection {

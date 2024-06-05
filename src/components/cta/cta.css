@@ -12,6 +12,11 @@
   font-size: 1.6rem;
   line-height: 1;
 }
+@media (max-width: 1024px) {
+  .actionBtn {
+    font-size: 1.4rem;
+  }
+}
 .actionBtn:focus {
   background-color: #00575d !important;
 }
@@ -43,6 +48,11 @@
   font-weight: 600;
   gap: 1rem;
   line-height: 0;
+}
+@media (max-width: 1024px) {
+  .linkBtn {
+    font-size: 1.4rem;
+  }
 }
 .linkBtn .arrow.transArrow {
   display: none;
