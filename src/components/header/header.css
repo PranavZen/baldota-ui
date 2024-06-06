@@ -82,6 +82,11 @@
     padding: 0;
   }
 }
+@media (max-width: 1024px) {
+  #topBar .box.topRightBox ul li span svg {
+    height: 2.4rem;
+  }
+}
 #topBar .box.topRightBox ul li:last-child span {
   text-align: right;
   font-size: 1.4rem;

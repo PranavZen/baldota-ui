@@ -66,6 +66,13 @@
           @include x-767-tablet {
             padding: 0;
           }
+          span{
+            svg{
+              @include d-desktop{
+                height: 2.4rem;
+              }
+            }
+          }
           &:last-child {
             span {
               text-align: right;

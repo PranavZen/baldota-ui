@@ -1,6 +1,16 @@
 .productSliderSection {
   padding: 8rem 0 11rem;
 }
+@media (max-width: 834px) {
+  .productSliderSection {
+    padding: 8rem 2rem 11rem;
+  }
+}
+@media (max-width: 767px) {
+  .productSliderSection {
+    padding: 4rem 1rem 7rem;
+  }
+}
 .productSliderSection .sectionTitle {
   text-align: center;
 }/*# sourceMappingURL=commonslider.css.map */

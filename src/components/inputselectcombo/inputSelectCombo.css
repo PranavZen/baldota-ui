@@ -5,6 +5,11 @@ form {
 form .comboInputWrap {
   position: relative;
 }
+@media (max-width: 1024px) {
+  form .comboInputWrap {
+    display: none;
+  }
+}
 form .comboInputWrap .form-select {
   height: 4.5rem;
   border: 0;
@@ -17,11 +22,6 @@ form .comboInputWrap .form-select {
   font-size: 1.4rem;
   font-weight: 400;
   color: #000;
-}
-@media (max-width: 1024px) {
-  form .comboInputWrap .form-select {
-    display: none;
-  }
 }
 form .comboInputWrap .form-select:focus {
   outline: none;
@@ -50,11 +50,6 @@ form .comboInputWrap .form-control {
   font-weight: 400;
   color: #000;
 }
-@media (max-width: 1024px) {
-  form .comboInputWrap .form-control {
-    padding-left: 1.5rem;
-  }
-}
 form .comboInputWrap .form-control:focus {
   outline: none;
   box-shadow: none;
@@ -76,4 +71,9 @@ form .searchBtn {
   font-size: 1.4rem;
   font-weight: 500;
   border: 0;
+}
+@media (max-width: 1024px) {
+  form .searchBtn {
+    display: none;
+  }
 }/*# sourceMappingURL=inputSelectCombo.css.map */

@@ -1,6 +1,13 @@
+@import "../../assets/scss/media";
 #footerSection {
   background-color: #1f1414;
   padding: 4rem 0;
+  @include md-tablet{
+    padding: 4rem 2rem;
+  }
+  @include x-767-tablet{
+    padding: 2rem 1rem;
+  }
   .topSec {
     border-bottom: 0.1rem solid #888888;
     padding-bottom: 3rem;
@@ -15,17 +22,31 @@
         font-size: 2rem;
         font-weight: 600;
         color: #fff;
+        @include d-desktop{
+          font-size: 1.8rem;
+        }
       }
       p {
         font-size: 1.6rem;
         font-weight: 400;
         color: #979797;
+        @include d-desktop{
+          font-size: 1.4rem;
+        }
+        @include x-767-tablet{
+          margin-bottom: 2rem;
+        }
       }
     }
   }
   .midSec {
     padding: 3rem 0;
     border-bottom: 0.1rem solid #888888;
+    .rowGap{
+      @include md-tablet{
+        row-gap: 3rem;
+      }
+    }
     .wrap {
       .foologoWrap {
         width: fit-content;
@@ -44,6 +65,9 @@
         font-size: 2rem;
         color: #fff;
         margin-bottom: 1rem;
+        @include d-desktop{
+          font-size: 1.6rem;
+        }
       }
       .fooLinks {
         li {
@@ -51,6 +75,11 @@
           span {
             padding-top: 0.5rem;
             line-height: 1;
+            svg{
+              @include d-desktop{
+                height: 1.6rem;
+              }
+            }
           }
           &:last-child {
             margin-bottom: 0;
@@ -59,11 +88,17 @@
             font-size: 1.6rem;
             font-weight: 400;
             color: #979797;
+            @include d-desktop{
+              font-size: 1.4rem;
+            }
           }
           p {
             font-size: 1.6rem;
             font-weight: 400;
             color: #979797;
+            @include d-desktop{
+              font-size: 1.4rem;
+            }
           }
         }
       }
@@ -71,15 +106,24 @@
   }
   .copyWriteWrap {
     padding: 4rem 0 0;
+    @include x-767-tablet{
+      padding: 2rem 0 0;
+    }
     .copyRow {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      @include x-767-tablet{
+        justify-content: center;
+      }
       p {
         font-size: 1.6rem;
         font-weight: 400;
         color: #979797;
+        @include d-desktop{
+          font-size: 1.2rem;
+        }
         a{
           color: #979797;
         }

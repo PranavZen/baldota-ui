@@ -1,20 +1,53 @@
+@import "../../assets/scss/media";
 #featureSection {
   padding: 5rem 0 0;
+  .rowGap{
+    @include md-tablet{
+      row-gap: 3rem;
+    }
+  }
   .fetBoxWrap {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    @include d-desktop{
+      align-items: flex-start;
+    }
+    @include x-767-tablet{
+      flex-direction: column;
+      align-items: center;
+    }
+    svg{
+      @include d-desktop{
+        height: 5rem;
+      }
+      @include x-767-tablet{
+        height: 3rem;
+      }
+    }
     .fetContentBox {
       h5 {
         font-size: 2rem;
         font-weight: 600;
         color: #007078;
+        @include d-desktop{
+          font-size: 1.6rem;
+        }
+        @include x-767-tablet{
+          text-align: center;
+        }
       }
       p {
         font-size: 1.4rem;
         font-weight: 400;
         color: #656565;
+        @include d-desktop{
+          font-size: 1.2rem;
+        }
+        @include x-767-tablet{
+          text-align: center;
+        }
       }
     }
   }

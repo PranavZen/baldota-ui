@@ -3,14 +3,14 @@ import { product1 } from "../../assets/imagesPath";
 const NewData = [
   {
     id: 0,
-    name: "New Baldota- Tube Fittings",
+    name: "0New Baldota- Tube Fittings",
     description: "1/16″ to 1 1/2″ and 2mm to 38mm",
     longDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     price: 2000,
     productImage: product1,
     offerPrice: 23,
-    slugUrl: "New Baldota- Tube Fittings",
+    slugUrl: "0New Baldota- Tube Fittings",
   },
   {
     id: 1,
@@ -21,7 +21,7 @@ const NewData = [
     price: 2000,
     productImage: product1,
     offerPrice: 23,
-    slugUrl: "New Baldota- Tube Fittings",
+    slugUrl: "1New Baldota- Tube Fittings",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const NewData = [
     price: 2000,
     productImage: product1,
     offerPrice: 23,
-    slugUrl: "New Baldota- Tube Fittings",
+    slugUrl: "2New Baldota- Tube Fittings",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const NewData = [
     price: 2000,
     productImage: product1,
     offerPrice: 23,
-    slugUrl: "New Baldota- Tube Fittings",
+    slugUrl: "3New Baldota- Tube Fittings",
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const NewData = [
     price: 2000,
     productImage: product1,
     offerPrice: 23,
-    slugUrl: "New Baldota- Tube Fittings",
+    slugUrl: "4New Baldota- Tube Fittings",
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const NewData = [
     price: 2000,
     productImage: product1,
     offerPrice: 23,
-    slugUrl: "New Baldota- Tube Fittings",
+    slugUrl: "5New Baldota- Tube Fittings",
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ const NewData = [
     price: 2000,
     productImage: product1,
     offerPrice: 23,
-    slugUrl: "New Baldota- Tube Fittings",
+    slugUrl: "6New Baldota- Tube Fittings",
   },
 ];
 

@@ -2,6 +2,22 @@
   padding: 8rem 0 4rem;
   background-color: #e3fdff;
 }
+@media (max-width: 834px) {
+  #ourPartnerSection {
+    padding: 8rem 2rem 4rem;
+  }
+}
+@media (max-width: 767px) {
+  #ourPartnerSection {
+    padding: 4rem 1rem 4rem;
+  }
+}
 #ourPartnerSection .sectionTitle {
   text-align: center;
+}
+@media (max-width: 834px) {
+  #ourPartnerSection .logosWrap .row {
+    row-gap: 3rem;
+    align-items: center;
+  }
 }/*# sourceMappingURL=ourpartner.css.map */

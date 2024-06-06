@@ -11,12 +11,22 @@
   align-items: center;
 }
 @media (max-width: 1024px) {
-  .custNav .col-md-5 {
+  .custNav .col-md-3 {
     width: 33.333%;
   }
 }
+@media (max-width: 834px) {
+  .custNav .col-md-3 {
+    width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .custNav .col-md-3 {
+    width: 80%;
+  }
+}
 @media (max-width: 1024px) {
-  .custNav .actionBtn {
+  .custNav .col-md-5 {
     display: none;
   }
 }
@@ -24,6 +34,12 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1024px) {
+  .custNav .navbar-collapse .navbar-nav {
+    width: 57%;
+    margin: 0 0 0 auto;
+  }
 }
 .custNav .navbar-collapse .navbar-nav .nav-item.cartMenu::after {
   content: "";
@@ -51,7 +67,7 @@
     font-size: 1.4rem;
   }
 }
-.custNav .navbar-collapse .navbar-nav .nav-item .nav-link span {
+.custNav .navbar-collapse .navbar-nav .nav-item .nav-link .cartBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,8 +77,7 @@
   border-radius: 5rem;
   position: relative;
 }
-.custNav .navbar-collapse .navbar-nav .nav-item .nav-link span.cartBox::after {
-  content: "";
+.custNav .navbar-collapse .navbar-nav .nav-item .nav-link .dotSpan {
   position: absolute;
   top: 1rem;
   right: 1rem;

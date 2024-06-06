@@ -1,5 +1,13 @@
+@import "../../assets/scss/media";
 #newsletterSection {
-    margin-bottom: 11rem;
+  margin-bottom: 11rem;
+  @include md-tablet {
+    margin: 0 2rem 11rem;
+  }
+  @include x-767-tablet {
+    margin: 0 0rem 4rem;
+    padding: 0rem 1rem 0rem;
+  }
   .bgWrpper {
     background-image: url(../../assets/images/newsletterBg.png);
     background-repeat: no-repeat;
@@ -10,13 +18,26 @@
     border-radius: 0.5rem;
     position: relative;
     padding: 3rem 6rem;
+    @include x-767-tablet {
+      padding: 3rem 1rem;
+    }
     .leftBox {
       width: 44%;
+      @include d-desktop {
+        width: 60%;
+      }
+      @include x-767-tablet {
+        width: 100%;
+      }
       .sectionTitle {
         color: #fff;
         margin-bottom: 1rem;
         line-height: 1.4;
+        @include x-767-tablet {
+          text-align: center;
+        }
       }
+
       form {
         margin-bottom: 1.5rem;
         .inputWrap {
@@ -27,10 +48,10 @@
             font-size: 1.4rem;
             font-weight: 500;
             color: #555555;
-            &:focus{
-                outline: none;
-                box-shadow: none;
-                border-color: transparent;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+              border-color: transparent;
             }
           }
           button {
@@ -56,6 +77,9 @@
 
       .commonPara {
         color: #d9d9d9;
+        @include x-767-tablet {
+          text-align: center;
+        }
       }
     }
   }

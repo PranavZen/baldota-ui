@@ -1,7 +1,22 @@
+@import '../../assets/scss/media';
 #ourPartnerSection {
   padding: 8rem 0 4rem;
   background-color: #e3fdff;
+  @include md-tablet{
+    padding: 8rem 2rem 4rem;
+  }
+  @include x-767-tablet{
+    padding: 4rem 1rem 4rem;
+  }
   .sectionTitle{
     text-align: center;
+  }
+  .logosWrap{
+    .row{
+      @include md-tablet{
+        row-gap: 3rem;
+        align-items: center;
+      }
+    }
   }
 }

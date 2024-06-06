@@ -56,12 +56,22 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 1024px) {
+  .cardInner .productDetailsWrap h6 {
+    font-size: 1.6rem;
+  }
+}
 .cardInner .productDetailsWrap p {
   font-size: 1.8rem;
   font-weight: 400;
   color: #656565;
   width: 75%;
   margin-bottom: 1rem;
+}
+@media (max-width: 1024px) {
+  .cardInner .productDetailsWrap p {
+    font-size: 1.4rem;
+  }
 }
 .cardInner .bottomBoxWrap {
   display: flex;
@@ -72,6 +82,11 @@
   font-size: 2.2rem;
   font-weight: 700;
   color: #007078;
+}
+@media (max-width: 1024px) {
+  .cardInner .bottomBoxWrap h6 {
+    font-size: 1.8rem;
+  }
 }
 
 .col-md-3 {

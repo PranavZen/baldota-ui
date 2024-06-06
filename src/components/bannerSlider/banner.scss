@@ -23,6 +23,9 @@
   align-items: center;
   justify-content: center;
   height: 40rem;
+  @include x-767-tablet{
+    height: 28rem;
+  }
 }
 
 .overlay {
@@ -32,12 +35,21 @@
   @include d-desktop{
     width: 45%;
   }
+  @include md-tablet{
+    width: 60%;
+  }
+  @include x-767-tablet{
+    width: 90%;
+  }
   .mainText {
     font-size: 5rem;
     font-weight: 700;
     color: #fff;
     @include d-desktop{
       font-size: 4rem;
+    }
+    @include x-767-tablet{
+      font-size: 2.4rem;
     }
     span {
       color: #ffa700;

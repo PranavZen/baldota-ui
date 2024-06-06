@@ -2,6 +2,12 @@
 
 .productSliderSection {
   padding: 8rem 0 11rem;
+  @include md-tablet{
+    padding: 8rem 2rem 11rem;
+  }
+  @include x-767-tablet{
+    padding: 4rem 1rem 7rem;
+  }
   .sectionTitle {
     text-align: center;
   }

@@ -2,8 +2,24 @@
   position: relative;
   margin: 2rem 0 11rem;
 }
+@media (max-width: 834px) {
+  #faqSection {
+    margin: 2rem 2rem 11rem;
+  }
+}
+@media (max-width: 767px) {
+  #faqSection {
+    padding: 4rem 1rem 0rem;
+    margin: 2rem 1rem 4rem;
+  }
+}
 #faqSection .bgImg {
   position: relative;
+}
+@media (max-width: 767px) {
+  #faqSection .bgImg .col-md-7 {
+    display: none;
+  }
 }
 #faqSection .bgImg .rightBox {
   position: absolute;
@@ -11,15 +27,35 @@
   top: 50%;
   width: 50%;
   transform: translateY(-50%);
-  background-color: #F7F7FB;
+  background-color: #f7f7fb;
   border-radius: 0.5rem;
   padding: 4rem 4rem 0;
+}
+@media (max-width: 834px) {
+  #faqSection .bgImg .rightBox {
+    width: 65%;
+  }
+}
+@media (max-width: 767px) {
+  #faqSection .bgImg .rightBox {
+    width: 100%;
+    padding: 4rem 1rem 0;
+    position: relative;
+    right: unset;
+    top: unset;
+    transform: none;
+  }
 }
 #faqSection .accordionWrap {
   z-index: 1;
 }
 #faqSection .accordionWrap .sectionTitle {
   margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  #faqSection .accordionWrap .sectionTitle {
+    text-align: center;
+  }
 }
 #faqSection .accordianContainer {
   height: 100%;
@@ -57,6 +93,11 @@
   width: 80%;
   line-height: 1.5;
 }
+@media (max-width: 1024px) {
+  #faqSection .accordianContainer .commonAccordian .accordianBtn .acc-title {
+    font-size: 1.6rem;
+  }
+}
 #faqSection .accordianContainer .commonAccordian .accordianBtn span {
   display: flex;
   width: 2.6rem;
@@ -72,7 +113,7 @@
   height: 1.4rem;
 }
 #faqSection .accordianContainer .commonAccordian .accordianBtn span svg path {
-  stroke: #01557D;
+  stroke: #01557d;
 }
 #faqSection .accordianContainer .commonAccordian .accordianContent {
   transition: height 0.8s linear;
@@ -88,12 +129,17 @@
   color: #656565;
   margin-bottom: 0;
 }
+@media (max-width: 1024px) {
+  #faqSection .accordianContainer .commonAccordian .accordianContent .accordianText p {
+    font-size: 1.4rem;
+  }
+}
 #faqSection .accordianContainer .commonAccordian.active {
   border-color: #01557d;
 }
 #faqSection .accordianContainer .commonAccordian.active .accordianArrow {
   transform: rotate(90deg);
-  background-color: #01557D;
+  background-color: #01557d;
 }
 #faqSection .accordianContainer .commonAccordian.active .accordianArrow svg path {
   stroke: white;

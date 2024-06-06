@@ -1,3 +1,4 @@
+@import "../../assets/scss/media";
 .cardInner {
   border: 0.1rem solid #007078;
   border-radius: 0.5rem;
@@ -53,6 +54,9 @@
       color: #1c2c2d;
       font-weight: 600;
       margin-bottom: 0.5rem;
+      @include d-desktop{
+        font-size: 1.6rem;
+      }
     }
     p {
       font-size: 1.8rem;
@@ -60,6 +64,9 @@
       color: #656565;
       width: 75%;
       margin-bottom: 1rem;
+      @include d-desktop{
+        font-size: 1.4rem;
+      }
     }
   }
   .bottomBoxWrap {
@@ -70,6 +77,9 @@
       font-size: 2.2rem;
       font-weight: 700;
       color: #007078;
+      @include d-desktop{
+        font-size: 1.8rem;
+      }
     }
   }
 }

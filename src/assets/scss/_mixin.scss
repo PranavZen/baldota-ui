@@ -90,6 +90,9 @@
     .highlightText {
       color: #ffa700;
     }
+    @include x-767-tablet{
+      font-size: 2.4rem;
+    }
   }
 }
 

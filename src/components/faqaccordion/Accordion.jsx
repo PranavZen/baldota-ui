@@ -22,7 +22,7 @@ function Accordion() {
               </div>
               <div className="rightBox">
                 <div className="accordionWrap">
-                  <SectionTitle title="Why Choose" spanTitle="Baldota ?" />
+                  <SectionTitle title="Why Choose" spanTitle="Baldota?" />
                   <div className="accordianContainer">
                     {accordianData.map((item, index) => {
                       return (

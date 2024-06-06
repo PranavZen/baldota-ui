@@ -1,6 +1,17 @@
 #newsletterSection {
   margin-bottom: 11rem;
 }
+@media (max-width: 834px) {
+  #newsletterSection {
+    margin: 0 2rem 11rem;
+  }
+}
+@media (max-width: 767px) {
+  #newsletterSection {
+    margin: 0 0rem 4rem;
+    padding: 0rem 1rem 0rem;
+  }
+}
 #newsletterSection .bgWrpper {
   background-image: url(../../assets/images/newsletterBg.png);
   background-repeat: no-repeat;
@@ -12,13 +23,33 @@
   position: relative;
   padding: 3rem 6rem;
 }
+@media (max-width: 767px) {
+  #newsletterSection .bgWrpper {
+    padding: 3rem 1rem;
+  }
+}
 #newsletterSection .bgWrpper .leftBox {
   width: 44%;
+}
+@media (max-width: 1024px) {
+  #newsletterSection .bgWrpper .leftBox {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  #newsletterSection .bgWrpper .leftBox {
+    width: 100%;
+  }
 }
 #newsletterSection .bgWrpper .leftBox .sectionTitle {
   color: #fff;
   margin-bottom: 1rem;
   line-height: 1.4;
+}
+@media (max-width: 767px) {
+  #newsletterSection .bgWrpper .leftBox .sectionTitle {
+    text-align: center;
+  }
 }
 #newsletterSection .bgWrpper .leftBox form {
   margin-bottom: 1.5rem;
@@ -58,4 +89,9 @@
 }
 #newsletterSection .bgWrpper .leftBox .commonPara {
   color: #d9d9d9;
+}
+@media (max-width: 767px) {
+  #newsletterSection .bgWrpper .leftBox .commonPara {
+    text-align: center;
+  }
 }/*# sourceMappingURL=newslwtter.css.map */

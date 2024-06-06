@@ -4,6 +4,9 @@ form {
   width: 100%;
   .comboInputWrap {
     position: relative;
+    @include d-desktop{
+      display: none;
+    }
     .form-select {
       height: 4.5rem;
       border: 0;
@@ -15,9 +18,7 @@ form {
       font-size: 1.4rem;
       font-weight: 400;
       color: #000;
-      @include d-desktop{
-        display: none;
-      }
+      
       &:focus {
         outline: none;
         box-shadow: none;
@@ -43,9 +44,7 @@ form {
       font-size: 1.4rem;
       font-weight: 400;
       color: #000;
-      @include d-desktop{
-        padding-left: 1.5rem;
-      }
+     
       &:focus {
         outline: none;
         box-shadow: none;
@@ -68,5 +67,8 @@ form {
     font-size: 1.4rem;
     font-weight: 500;
     border: 0;
+    @include d-desktop{
+      display: none;
+    }
   }
 }

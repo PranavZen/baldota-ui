@@ -23,6 +23,11 @@
   justify-content: center;
   height: 40rem;
 }
+@media (max-width: 767px) {
+  .slide {
+    height: 28rem;
+  }
+}
 
 .overlay {
   width: 37%;
@@ -34,6 +39,16 @@
     width: 45%;
   }
 }
+@media (max-width: 834px) {
+  .overlay {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .overlay {
+    width: 90%;
+  }
+}
 .overlay .mainText {
   font-size: 5rem;
   font-weight: 700;
@@ -42,6 +57,11 @@
 @media (max-width: 1024px) {
   .overlay .mainText {
     font-size: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .overlay .mainText {
+    font-size: 2.4rem;
   }
 }
 .overlay .mainText span {

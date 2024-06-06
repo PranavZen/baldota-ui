@@ -16,7 +16,7 @@ function Navbar() {
           <div className="custNav">
             <div className="col-md-3">
               <div className="navLeftBox">
-                <Link className="navbar-brand" to="#">
+                <Link className="navbar-brand" to="/">
                   <img src={logo} alt="Baldota Logo" className="img-fluid" />
                 </Link>
                 <SquareBtn
@@ -75,11 +75,12 @@ function Navbar() {
                         />
                       </svg>
                     </span>
+                    <span className="dotSpan"></span>
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="#">
-                    <span className="profileBox">
+                    <span className="cartBox profileBox">
                       <img
                         src={smallproImg}
                         alt="profile imag"

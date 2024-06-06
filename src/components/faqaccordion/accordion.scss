@@ -1,23 +1,51 @@
+@import "../../assets/scss/media";
 #faqSection {
   position: relative;
   margin: 2rem 0 11rem;
+  @include md-tablet {
+    margin: 2rem 2rem 11rem;
+  }
+  @include x-767-tablet {
+    padding: 4rem 1rem 0rem;
+    margin: 2rem 1rem 4rem;
+  }
+
   .bgImg {
     position: relative;
+    .col-md-7 {
+      @include x-767-tablet {
+        display: none;
+      }
+    }
     .rightBox {
       position: absolute;
       right: 0;
       top: 50%;
       width: 50%;
       transform: translateY(-50%);
-      background-color: #F7F7FB;
-      border-radius: .5rem;
+      background-color: #f7f7fb;
+      border-radius: 0.5rem;
       padding: 4rem 4rem 0;
+      @include md-tablet {
+        width: 65%;
+      }
+      @include x-767-tablet {
+        width: 100%;
+        padding: 4rem 1rem 0;
+        position: relative;
+        right: unset;
+        top: unset;
+        transform: none;
+      }
     }
   }
   .accordionWrap {
     z-index: 1;
-    .sectionTitle{
-        margin-bottom: 0;
+    .sectionTitle {
+      margin-bottom: 0;
+      @include x-767-tablet {
+        text-align: center;
+      }
     }
   }
   .accordianContainer {
@@ -53,6 +81,9 @@
           margin-bottom: 0;
           width: 80%;
           line-height: 1.5;
+          @include d-desktop {
+            font-size: 1.6rem;
+          }
         }
 
         span {
@@ -65,10 +96,10 @@
           transition: transform 0.3s linear;
           border-radius: 100%;
           box-shadow: 0 0 11px -4px #b0b0b0;
-          svg{
+          svg {
             height: 1.4rem;
-            path{
-                stroke: #01557D;
+            path {
+              stroke: #01557d;
             }
           }
         }
@@ -84,6 +115,9 @@
             font-weight: 400;
             color: #656565;
             margin-bottom: 0;
+            @include d-desktop {
+              font-size: 1.4rem;
+            }
           }
         }
       }
@@ -91,7 +125,7 @@
         border-color: #01557d;
         .accordianArrow {
           transform: rotate(90deg);
-          background-color: #01557D;
+          background-color: #01557d;
           svg {
             path {
               stroke: white;

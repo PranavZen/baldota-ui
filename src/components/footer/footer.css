@@ -2,6 +2,16 @@
   background-color: #1f1414;
   padding: 4rem 0;
 }
+@media (max-width: 834px) {
+  #footerSection {
+    padding: 4rem 2rem;
+  }
+}
+@media (max-width: 767px) {
+  #footerSection {
+    padding: 2rem 1rem;
+  }
+}
 #footerSection .topSec {
   border-bottom: 0.1rem solid #888888;
   padding-bottom: 3rem;
@@ -17,14 +27,34 @@
   font-weight: 600;
   color: #fff;
 }
+@media (max-width: 1024px) {
+  #footerSection .footerTopWrap .leftTopWrap h6 {
+    font-size: 1.8rem;
+  }
+}
 #footerSection .footerTopWrap .leftTopWrap p {
   font-size: 1.6rem;
   font-weight: 400;
   color: #979797;
 }
+@media (max-width: 1024px) {
+  #footerSection .footerTopWrap .leftTopWrap p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 767px) {
+  #footerSection .footerTopWrap .leftTopWrap p {
+    margin-bottom: 2rem;
+  }
+}
 #footerSection .midSec {
   padding: 3rem 0;
   border-bottom: 0.1rem solid #888888;
+}
+@media (max-width: 834px) {
+  #footerSection .midSec .rowGap {
+    row-gap: 3rem;
+  }
 }
 #footerSection .midSec .wrap .foologoWrap {
   width: -moz-fit-content;
@@ -46,12 +76,22 @@
   color: #fff;
   margin-bottom: 1rem;
 }
+@media (max-width: 1024px) {
+  #footerSection .midSec .wrap .sectionTitle {
+    font-size: 1.6rem;
+  }
+}
 #footerSection .midSec .wrap .fooLinks li {
   margin-bottom: 1.5rem;
 }
 #footerSection .midSec .wrap .fooLinks li span {
   padding-top: 0.5rem;
   line-height: 1;
+}
+@media (max-width: 1024px) {
+  #footerSection .midSec .wrap .fooLinks li span svg {
+    height: 1.6rem;
+  }
 }
 #footerSection .midSec .wrap .fooLinks li:last-child {
   margin-bottom: 0;
@@ -61,13 +101,28 @@
   font-weight: 400;
   color: #979797;
 }
+@media (max-width: 1024px) {
+  #footerSection .midSec .wrap .fooLinks li a {
+    font-size: 1.4rem;
+  }
+}
 #footerSection .midSec .wrap .fooLinks li p {
   font-size: 1.6rem;
   font-weight: 400;
   color: #979797;
 }
+@media (max-width: 1024px) {
+  #footerSection .midSec .wrap .fooLinks li p {
+    font-size: 1.4rem;
+  }
+}
 #footerSection .copyWriteWrap {
   padding: 4rem 0 0;
+}
+@media (max-width: 767px) {
+  #footerSection .copyWriteWrap {
+    padding: 2rem 0 0;
+  }
 }
 #footerSection .copyWriteWrap .copyRow {
   display: flex;
@@ -75,10 +130,20 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  #footerSection .copyWriteWrap .copyRow {
+    justify-content: center;
+  }
+}
 #footerSection .copyWriteWrap .copyRow p {
   font-size: 1.6rem;
   font-weight: 400;
   color: #979797;
+}
+@media (max-width: 1024px) {
+  #footerSection .copyWriteWrap .copyRow p {
+    font-size: 1.2rem;
+  }
 }
 #footerSection .copyWriteWrap .copyRow p a {
   color: #979797;

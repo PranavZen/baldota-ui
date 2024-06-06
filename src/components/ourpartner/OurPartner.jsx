@@ -12,23 +12,23 @@ function OurPartner() {
           <div className="col-md-12 col-lg-10 mx-auto">
             <div className="logosWrap">
               <ul className="row">
-                <li className="col-md-2">
-                  <img src={partner1} alt="" />
+                <li className="col-lg-2 col-md-3 col-6">
+                  <img className="img-fluid" src={partner1} alt="" />
                 </li>
-                <li className="col-md-2">
-                  <img src={partner2} alt="" />
+                <li className="col-lg-2 col-md-3 col-6">
+                  <img className="img-fluid" src={partner2} alt="" />
                 </li>
-                <li className="col-md-2">
-                  <img src={partner3} alt="" />
+                <li className="col-lg-2 col-md-3 col-6">
+                  <img className="img-fluid" src={partner3} alt="" />
                 </li>
-                <li className="col-md-2">
-                  <img src={partner4} alt="" />
+                <li className="col-lg-2 col-md-3 col-6">
+                  <img className="img-fluid" src={partner4} alt="" />
                 </li>
-                <li className="col-md-2">
-                  <img src={partner5} alt="" />
+                <li className="col-lg-2 col-md-3 col-6">
+                  <img className="img-fluid" src={partner5} alt="" />
                 </li>
-                <li className="col-md-2">
-                  <img src={partner6} alt="" />
+                <li className="col-lg-2 col-md-3 col-6">
+                  <img className="img-fluid" src={partner6} alt="" />
                 </li>
               </ul>
             </div>

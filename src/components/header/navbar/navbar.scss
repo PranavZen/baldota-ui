@@ -10,21 +10,32 @@
     justify-content: space-between;
     align-items: center;
   }
-  .col-md-5{
-    @include d-desktop{
+  .col-md-3 {
+    @include d-desktop {
       width: 33.333%;
     }
+    @include md-tablet {
+      width: 45%;
+    }
+    @include x-767-tablet {
+      width: 80%;
+    }
   }
-  .actionBtn{
-    @include d-desktop{
+  .col-md-5 {
+    @include d-desktop {
       display: none;
     }
   }
+
   .navbar-collapse {
     .navbar-nav {
       width: 100%;
       justify-content: space-between;
       align-items: center;
+      @include d-desktop {
+        width: 57%;
+        margin: 0 0 0 auto;
+      }
       .nav-item {
         &.cartMenu {
           &::after {
@@ -35,7 +46,7 @@
             width: 0.2rem;
             height: 55%;
             background: #cbcbcb;
-            @include d-desktop{
+            @include d-desktop {
               right: 5.2%;
             }
           }
@@ -46,10 +57,10 @@
           color: #919191;
           position: relative;
           padding: 0;
-          @include d-desktop{
+          @include d-desktop {
             font-size: 1.4rem;
           }
-          span {
+          .cartBox {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -58,19 +69,15 @@
             background: #007078;
             border-radius: 5rem;
             position: relative;
-
-            &.cartBox {
-              &::after {
-                content: "";
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                width: 1rem;
-                height: 1rem;
-                border-radius: 5rem;
-                background: #27ed8e;
-              }
-            }
+          }
+          .dotSpan {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 5rem;
+            background: #27ed8e;
           }
         }
       }

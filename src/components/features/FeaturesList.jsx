@@ -6,8 +6,8 @@ function FeaturesList() {
       <div className="container">
         <div className="row">
           <div className="col-lg-10 col-md-12 mx-auto">
-            <div className="row">
-              <div className="col-md-3">
+            <div className="row rowGap">
+              <div className="col-lg-3 col-md-6 col-6">
                 <div className="fetBoxWrap">
                   <span>
                     <svg
@@ -29,7 +29,7 @@ function FeaturesList() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-lg-3 col-md-6 col-6">
                 <div className="fetBoxWrap">
                   <span>
                     <svg
@@ -58,7 +58,7 @@ function FeaturesList() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-lg-3 col-md-6 col-6">
                 <div className="fetBoxWrap">
                   <span>
                     <svg
@@ -80,7 +80,7 @@ function FeaturesList() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-lg-3 col-md-6 col-6">
                 <div className="fetBoxWrap">
                   <span>
                     <svg

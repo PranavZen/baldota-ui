@@ -1,19 +1,65 @@
 #featureSection {
   padding: 5rem 0 0;
 }
+@media (max-width: 834px) {
+  #featureSection .rowGap {
+    row-gap: 3rem;
+  }
+}
 #featureSection .fetBoxWrap {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 1024px) {
+  #featureSection .fetBoxWrap {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  #featureSection .fetBoxWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  #featureSection .fetBoxWrap svg {
+    height: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  #featureSection .fetBoxWrap svg {
+    height: 3rem;
+  }
+}
 #featureSection .fetBoxWrap .fetContentBox h5 {
   font-size: 2rem;
   font-weight: 600;
   color: #007078;
 }
+@media (max-width: 1024px) {
+  #featureSection .fetBoxWrap .fetContentBox h5 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767px) {
+  #featureSection .fetBoxWrap .fetContentBox h5 {
+    text-align: center;
+  }
+}
 #featureSection .fetBoxWrap .fetContentBox p {
   font-size: 1.4rem;
   font-weight: 400;
   color: #656565;
+}
+@media (max-width: 1024px) {
+  #featureSection .fetBoxWrap .fetContentBox p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 767px) {
+  #featureSection .fetBoxWrap .fetContentBox p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=feature.css.map */

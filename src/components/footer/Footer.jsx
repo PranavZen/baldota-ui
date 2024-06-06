@@ -35,8 +35,8 @@ function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-lg-10 mx-auto">
-              <div className="row">
-                <div className="col-md-5">
+              <div className="row rowGap">
+                <div className="col-lg-5 col-md-6">
                   <div className="wrap">
                     <div className="foologoWrap">
                       <Link to="">
@@ -120,7 +120,7 @@ function Footer() {
                     </ul>
                   </div>
                 </div>
-                <div className="col-md-2">
+                <div className="col-lg-2 col-md-6">
                   <div className="wrap">
                     <h6 className="sectionTitle">Product</h6>
                     <ul className="fooLinks">
@@ -142,7 +142,7 @@ function Footer() {
                     </ul>
                   </div>
                 </div>
-                <div className="col-md-2">
+                <div className="col-lg-2 col-md-6">
                   <div className="wrap">
                     <h6 className="sectionTitle">Company</h6>
                     <ul className="fooLinks">
@@ -161,7 +161,7 @@ function Footer() {
                     </ul>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-lg-3 col-md-6">
                   <div className="wrap">
                     <h6 className="sectionTitle">Corporate Office</h6>
                     <ul className="fooLinks">
