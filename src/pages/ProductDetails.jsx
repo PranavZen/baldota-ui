@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import data from "../components/card/productData";
 import NewData from "../components/card/newProductData";
 import slugify from "slugify";
+import SectionTitle from "../components/commonProductSlider/SectionTitle";
 
 function ProductDetails() {
   const { slug } = useParams();
@@ -12,18 +13,22 @@ function ProductDetails() {
   );
 
   if (!product) {
-    return <div>Product not found</div>;
+    return (
+      <div className="emptyPage">
+        <SectionTitle title="Product" spanTitle="not found" />
+      </div>
+    );
   }
 
   return (
-    <div className="rrr">
+    <section id="singleProductPage">
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>{product.longDescription}</p>
       <p>{product.offerPrice}% off</p>
       <p>₹ {product.price}/-</p>
       <img src={product.productImage} alt={product.name} />
-    </div>
+    </section>
   );
 }
 

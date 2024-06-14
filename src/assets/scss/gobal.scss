@@ -39,6 +39,9 @@ body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  &.active{
+    overflow: hidden;
+  }
 }
 ul {
   padding: 0;
@@ -110,7 +113,9 @@ input {
 @include commonTitle;
 @include commonPara;
 @include commonSpanBox;
-
+// .row{
+//   width: 100%;
+// }
 #popularProductsSection {
   padding: 8rem 0 10rem;
   background-color: #f8f8f8;
@@ -122,7 +127,7 @@ input {
   }
   .sectionTitle {
     margin-bottom: 1rem;
-    @include x-767-tablet{
+    @include x-767-tablet {
       text-align: center;
     }
   }
@@ -236,7 +241,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @include x-767-tablet{
+    @include x-767-tablet {
       padding: 2rem 2rem;
     }
     h5 {
@@ -249,7 +254,7 @@ input {
         width: 55%;
         font-size: 3rem;
       }
-      @include x-767-tablet{
+      @include x-767-tablet {
         width: 100%;
         font-size: 2.2rem;
       }
@@ -263,4 +268,19 @@ input {
       }
     }
   }
+}
+
+#singleProductPage {
+  padding: 8rem 0;
+  .row {
+    row-gap: 1.5rem;
+  }
+}
+
+.emptyPage {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

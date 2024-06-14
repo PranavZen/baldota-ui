@@ -110,7 +110,12 @@
 
 #headerSection {
   padding: 1.5rem 0;
-  position: relative;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 1024px) {
   #headerSection {

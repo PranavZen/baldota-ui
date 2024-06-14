@@ -1,3 +1,7 @@
+.navbar {
+  width: 100%;
+}
+
 .custNav {
   width: 100%;
   display: flex;
@@ -88,12 +92,65 @@
 }
 
 .allProductsDisplayBox {
-  background-color: red;
+  background-color: #F8F8F8;
   position: absolute;
-  width: 95%;
-  height: 55rem;
+  width: 90.5%;
+  height: 53.9rem;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 3;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.allProductsDisplayBox .tabsWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.allProductsDisplayBox .tabsWrap .nav-pills {
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  max-height: 53.9rem;
+  overflow-y: auto;
+  border-right: 0.1rem solid #8d8d8d;
+}
+.allProductsDisplayBox .tabsWrap .nav-pills::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+.allProductsDisplayBox .tabsWrap .nav-pills::-webkit-scrollbar-thumb {
+  background: #007078;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.allProductsDisplayBox .tabsWrap .nav-pills::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #e3a835, #e3a835 1px, #e3a835 0, #e3a835);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.allProductsDisplayBox .tabsWrap .nav-pills::-webkit-scrollbar-corner {
+  background: #e3a835;
+}
+.allProductsDisplayBox .tabsWrap .tab-content {
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  max-height: 53.9rem;
+  overflow-y: auto;
+}
+.allProductsDisplayBox .tabsWrap .tab-content::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+.allProductsDisplayBox .tabsWrap .tab-content::-webkit-scrollbar-thumb {
+  background: #007078;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.allProductsDisplayBox .tabsWrap .tab-content::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #e3a835, #e3a835 1px, #e3a835 0, #e3a835);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.allProductsDisplayBox .tabsWrap .tab-content::-webkit-scrollbar-corner {
+  background: #e3a835;
 }
 .allProductsDisplayBox.show {
   left: 50%;

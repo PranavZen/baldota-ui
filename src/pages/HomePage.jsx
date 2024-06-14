@@ -32,7 +32,7 @@ function HomePage() {
       <div id="productSliderSection" className="productSliderSection">
         <div className="container">
           <div className="row">
-            <div className="col-lg-10 col-md-12 mx-auto">
+            <div className="col-lg-12 col-md-12 mx-auto">
               <SectionTitle title="Recent" spanTitle="Products" />
               <CommonSlider>
                 {data.map((item, index) => {
@@ -69,7 +69,7 @@ function HomePage() {
       <div id="productSliderSection" className="productSliderSection">
         <div className="container">
           <div className="row">
-            <div className="col-lg-10 col-md-12 mx-auto">
+            <div className="col-lg-12 col-md-12 mx-auto">
               <SectionTitle title="New" spanTitle="Products" />
               <CommonSlider>
                 {newProductData.map((item, index) => {

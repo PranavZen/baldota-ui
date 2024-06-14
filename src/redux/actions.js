@@ -1,5 +1,5 @@
 export const TOGGLE_WISHLIST = "TOGGLE_WISHLIST";
-export const SET_SLUGS = 'SET_SLUGS';
+// export const SET_SLUGS = 'SET_SLUGS';
 
 export const TOGGLE_ACCORDIAN = 'TOGGLE_ACCORDIAN';
 

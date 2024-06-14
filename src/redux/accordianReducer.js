@@ -1,8 +1,7 @@
-
-import { TOGGLE_ACCORDIAN } from './actions';
+import { TOGGLE_ACCORDIAN } from "./actions";
 
 const initialState = {
-  openIndex: null
+  openIndex: null,
 };
 
 const accordianReducer = (state = initialState, action) => {
@@ -10,7 +9,7 @@ const accordianReducer = (state = initialState, action) => {
     case TOGGLE_ACCORDIAN:
       return {
         ...state,
-        openIndex: state.openIndex === action.payload ? null : action.payload
+        openIndex: state.openIndex === action.payload ? null : action.payload,
       };
     default:
       return state;

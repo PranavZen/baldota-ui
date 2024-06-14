@@ -1,14 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import InputSelectCombo from "../../inputselectcombo/InputSelectCombo";
 import { logo, smallproImg } from "../../../assets/imagesPath";
 import SquareBtn from "../../cta/SquareBtn";
 import { Link } from "react-router-dom";
 import "../navbar/navbar.css";
+import singlepopulardata from "../../popularproducts/singlepopulardata";
+import { useDispatch, useSelector } from "react-redux";
+import { selectWishlist } from "../../../redux/selectors";
+import { toggleWishlist } from "../../../redux/actions";
+import ProductCardItem from "../../card/ProductCardItem";
+import SectionTitle from "../../commonProductSlider/SectionTitle";
+
 function Navbar() {
+  const uniqueTypes = [...new Set(singlepopulardata.map((item) => item.type))];
   const [show, setShow] = useState(false);
-  const showAlertMessage = () => {
-    setShow(!show);
+  const [activeTab, setActiveTab] = useState(
+    uniqueTypes.length > 0 ? uniqueTypes[0] : ""
+  );
+  const dispatch = useDispatch();
+  const wishlist = useSelector(selectWishlist);
+
+  const handleClick = (index) => {
+    dispatch(toggleWishlist(index));
   };
+
+  useEffect(() => {
+    if (show) {
+      document.body.classList.add("active");
+    } else {
+      document.body.classList.remove("active");
+    }
+  }, [show]);
+
+  const showAlertMessage = () => {
+    setShow((prevShow) => !prevShow);
+  };
+
+  const groupedProducts = uniqueTypes.reduce((acc, type) => {
+    acc[type] = singlepopulardata.filter((item) => item.type === type);
+    return acc;
+  }, {});
+
   return (
     <>
       <div className="container">
@@ -45,7 +77,7 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" to="#">
+                  <Link className="nav-link" aria-current="page" to="/about-us">
                     About Us
                   </Link>
                 </li>
@@ -94,96 +126,76 @@ function Navbar() {
           </div>
         </nav>
       </div>
-      <div className={show ? "allProductsDisplayBox show" : "allProductsDisplayBox hide"}>
-        <div className="d-flex align-items-start">
+      <div
+        className={
+          show ? "allProductsDisplayBox show" : "allProductsDisplayBox hide"
+        }
+      >
+        <div className="tabsWrap">
           <div
-            className="nav flex-column nav-pills me-3"
+            className="nav nav-pills"
             id="v-pills-tab"
             role="tablist"
             aria-orientation="vertical"
           >
-            <button
-              className="nav-link active"
-              id="v-pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-home"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-home"
-              aria-selected="true"
-            >
-              Home
-            </button>
-            <button
-              className="nav-link"
-              id="v-pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-profile"
-              aria-selected="false"
-            >
-              Profile
-            </button>
-            <button
-              className="nav-link"
-              id="v-pills-messages-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-messages"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-messages"
-              aria-selected="false"
-            >
-              Messages
-            </button>
-            <button
-              className="nav-link"
-              id="v-pills-settings-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-settings"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-settings"
-              aria-selected="false"
-            >
-              Settings
-            </button>
+            {uniqueTypes.map((type, index) => (
+              <button
+                className={`nav-link ${activeTab === type ? "active" : ""}`}
+                id={type}
+                data-bs-toggle="pill"
+                data-bs-target={`#v-pills-${type}`}
+                type="button"
+                role="tab"
+                aria-controls={type}
+                aria-selected={activeTab === type ? "true" : "false"}
+                key={index}
+                onClick={() => setActiveTab(type)}
+              >
+                {type}
+              </button>
+            ))}
           </div>
+
           <div className="tab-content" id="v-pills-tabContent">
-            <div
-              className="tab-pane fade show active"
-              id="v-pills-home"
-              role="tabpanel"
-              aria-labelledby="v-pills-home-tab"
-            >
-              111
-            </div>
-            <div
-              className="tab-pane fade"
-              id="v-pills-profile"
-              role="tabpanel"
-              aria-labelledby="v-pills-profile-tab"
-            >
-              222
-            </div>
-            <div
-              className="tab-pane fade"
-              id="v-pills-messages"
-              role="tabpanel"
-              aria-labelledby="v-pills-messages-tab"
-            >
-              333
-            </div>
-            <div
-              className="tab-pane fade"
-              id="v-pills-settings"
-              role="tabpanel"
-              aria-labelledby="v-pills-settings-tab"
-            >
-              444
-            </div>
+            {uniqueTypes.map((type, index) => (
+              <div
+                className={`tab-pane fade ${
+                  activeTab === type ? "show active" : ""
+                }`}
+                id={type}
+                role="tabpanel"
+                aria-labelledby={type}
+                key={index}
+              >
+                <div className="container">
+                  <div className="row">
+                    {groupedProducts[type].length > 0 && (
+                      <SectionTitle
+                        title={groupedProducts[type][0].type}
+                        spanTitle="Products"
+                      />
+                    )}
+                    {groupedProducts[type].map((item, index) => {
+                      const isWishlisted = wishlist.includes(item.id);
+                      return (
+                        <div
+                          className="col-md-4 position-relative mb-4"
+                          key={index}
+                        >
+                          <ProductCardItem
+                            key={index}
+                            item={item}
+                            index={item.id}
+                            isWishlisted={isWishlisted}
+                            handleClick={() => handleClick(item.id)}
+                          />
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

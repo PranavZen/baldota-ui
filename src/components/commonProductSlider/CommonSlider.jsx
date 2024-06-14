@@ -7,7 +7,7 @@ function CommonSlider({ children }) {
     dots: true,
     infinite: true,
     loop: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
@@ -15,9 +15,9 @@ function CommonSlider({ children }) {
     margin: 5,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1100,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true,

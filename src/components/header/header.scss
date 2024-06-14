@@ -66,9 +66,9 @@
           @include x-767-tablet {
             padding: 0;
           }
-          span{
-            svg{
-              @include d-desktop{
+          span {
+            svg {
+              @include d-desktop {
                 height: 2.4rem;
               }
             }
@@ -101,7 +101,13 @@
 
 #headerSection {
   padding: 1.5rem 0;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
   @include d-desktop {
     padding: 0.5rem 1.5rem;
   }

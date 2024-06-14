@@ -33,6 +33,7 @@ const data = [
     productImage: product1,
     offerPrice: 15,
     slugUrl: "Baldota- Weld Fittings",
+    
   },
   {
     id: 3,

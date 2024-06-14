@@ -1,4 +1,8 @@
 @import "../../../assets/scss/media";
+
+.navbar{
+  width: 100%;
+}
 .custNav {
   width: 100%;
   display: flex;
@@ -26,7 +30,7 @@
       display: none;
     }
   }
-
+ 
   .navbar-collapse {
     .navbar-nav {
       width: 100%;
@@ -86,12 +90,81 @@
 }
 
 .allProductsDisplayBox {
-  background-color: red;
+  background-color: #F8F8F8;
   position: absolute;
-  width: 95%;
-  height: 55rem;
+  width: 90.5%;
+  height: 53.9rem;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 3;
+  border-radius: .3rem;
+  overflow: hidden;
+  .tabsWrap{
+    display: flex;
+    justify-content: space-between;
+    .nav-pills{
+      flex-direction: column;
+      width: 20%;
+      height: 100%;
+      max-height: 53.9rem;
+      overflow-y: auto;
+      border-right: .1rem solid #8d8d8d;
+      &::-webkit-scrollbar {
+        width: 16px;
+        height: 16px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #007078;
+        border-radius: 16px;
+        box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+          inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+      }
+      &::-webkit-scrollbar-track {
+        background: linear-gradient(
+          90deg,
+          #e3a835,
+          #e3a835 1px,
+          #e3a835 0,
+          #e3a835
+        );
+        box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+          inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+      }
+      &::-webkit-scrollbar-corner {
+        background: #e3a835;
+      }
+    }
+    .tab-content{
+      width: 80%;
+      height: 100%;
+      padding: 2rem;
+      max-height: 53.9rem;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 16px;
+        height: 16px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #007078;
+        border-radius: 16px;
+        box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+          inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+      }
+      &::-webkit-scrollbar-track {
+        background: linear-gradient(
+          90deg,
+          #e3a835,
+          #e3a835 1px,
+          #e3a835 0,
+          #e3a835
+        );
+        box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+          inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+      }
+      &::-webkit-scrollbar-corner {
+        background: #e3a835;
+      }
+    }
+  }
   &.show {
     left: 50%;
     transition: left 0.4s ease;

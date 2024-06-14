@@ -1,0 +1,41 @@
+#banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20.6rem;
+  position: relative;
+}
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 112, 120, 0.7647058824);
+}
+#banner .overlayTextWrap {
+  position: relative;
+}
+#banner .overlayTextWrap .sectionTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 3rem;
+}
+#banner .overlayTextWrap .sectionTitle .highlightText {
+  color: #ffa700;
+}
+@media (max-width: 767px) {
+  #banner .overlayTextWrap .sectionTitle {
+    font-size: 2.4rem;
+  }
+}
+#banner .overlayTextWrap .sectionTitle {
+  color: #fff;
+  margin-bottom: 0;
+}/*# sourceMappingURL=innerbanner.css.map */

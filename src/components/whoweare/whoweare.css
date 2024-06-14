@@ -1,0 +1,92 @@
+#whoWeAreSection {
+  padding: 8rem 0;
+}
+#whoWeAreSection .leftBox .commonPara {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #656565;
+}
+@media (max-width: 1024px) {
+  #whoWeAreSection .leftBox .commonPara {
+    font-size: 1.4rem;
+  }
+}
+#whoWeAreSection .leftBox .commonPara {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #888888;
+}
+#whoWeAreSection .leftBox .sectionTitle {
+  margin-bottom: 2rem;
+}
+#whoWeAreSection .leftBox .contentWrap .commonPara {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #8c8c8c;
+}
+#whoWeAreSection .leftBox .contentWrap .commonPara:last-child {
+  margin-bottom: 0;
+}
+#whoWeAreSection .rightBox {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#whoWeAreSection .rightBox span {
+  position: absolute;
+}
+#whoWeAreSection .rightBox .topRight {
+  top: 0;
+  right: 0;
+}
+#whoWeAreSection .rightBox .bottomLeft {
+  bottom: 0;
+  left: 0;
+}
+#whoWeAreSection .rightBox .topLeft {
+  top: 0;
+  left: 20%;
+  z-index: -1;
+}
+#whoWeAreSection .rightBox .topLeftMid {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+#whoWeAreSection .rightBox .bottomRightMid {
+  position: absolute;
+  bottom: 10%;
+  left: 47%;
+}
+#whoWeAreSection .rightBox .box {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 5.5rem;
+  background-color: #fff;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 6px -1px #a19b9b;
+}
+#whoWeAreSection .rightBox .box .smallBox {
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: #fef5f5;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#whoWeAreSection .rightBox .box .contentBox h6 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #94a3b8;
+}
+#whoWeAreSection .rightBox .box .contentBox p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #007078;
+}/*# sourceMappingURL=whoweare.css.map */

@@ -5,7 +5,7 @@ import accordianReducer from "./accordianReducer";
 
 const rootReducer = combineReducers({
   wishlistState: wishlistReducer,
-//   slugState: slugReducer,
+  //   slugState: slugReducer,
   accordianState: accordianReducer,
 });
 

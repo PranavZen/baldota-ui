@@ -1,0 +1,29 @@
+@import '../../assets/scss/mixin';
+#banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20.6rem;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #007078c3;
+  }
+  .overlayTextWrap {
+    position: relative;
+    @include commonTitle;
+    .sectionTitle{
+        color: #fff;
+        margin-bottom: 0;
+    }
+  }
+}

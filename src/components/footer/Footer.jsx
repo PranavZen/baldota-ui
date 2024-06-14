@@ -125,13 +125,13 @@ function Footer() {
                     <h6 className="sectionTitle">Product</h6>
                     <ul className="fooLinks">
                       <li>
-                        <Link to="">Fittings</Link>
+                        <Link to="/categories/fittings">Fittings</Link>
                       </li>
                       <li>
-                        <Link to="">Valves</Link>
+                        <Link to="/categories/valves">Valves</Link>
                       </li>
                       <li>
-                        <Link to="">Manifolds</Link>
+                        <Link to="/categories/manifolds">Manifolds</Link>
                       </li>
                       <li>
                         <Link to="">Condensate Pots</Link>

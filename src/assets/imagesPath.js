@@ -13,3 +13,7 @@ export { default as partner5 } from "../assets/images/partner5.png";
 export { default as partner6 } from "../assets/images/partner6.png";
 export { default as factoryImg } from "../assets/images/factoryimg.png";
 export { default as fooLogo } from "../assets/images/footerlogo.png";
+export { default as innerBanner1 } from "../assets/images/inner-banner.png";
+export { default as right1 } from "../assets/images/right1.png";
+export { default as right2 } from "../assets/images/right2.png";
+export { default as rightBg } from "../assets/images/rightbg.png";
