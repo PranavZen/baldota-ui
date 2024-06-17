@@ -286,4 +286,28 @@
   #navbarTogglerDemo02.navbar-collapse.show .navbar-nav .nav-item .nav-link {
     color: #fff;
   }
+}
+
+.pagination {
+  padding: 2rem 0;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.pagination button {
+  background-color: rgba(0, 112, 120, 0.8156862745);
+  color: #f8f8f8;
+  padding: 0.5rem 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.pagination button.active {
+  background-color: #004f54;
+  color: #f8f8f8;
+}
+.pagination button:hover {
+  background-color: #007078;
+  color: #f8f8f8;
 }/*# sourceMappingURL=navbar.css.map */

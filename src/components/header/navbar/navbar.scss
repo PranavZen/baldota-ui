@@ -300,3 +300,26 @@
     }
   }
 }
+
+.pagination{
+  padding: 2rem 0;
+  justify-content: flex-end;
+  gap: 1rem;
+  button{
+    background-color: #007078d0;
+    color: #f8f8f8;
+    padding: .5rem 1.5rem;
+    width: fit-content;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    &.active{
+      background-color: #004f54;
+      color: #f8f8f8;
+    }
+    &:hover{
+      background-color: #007078;
+      color: #f8f8f8;
+    }
+  }
+}

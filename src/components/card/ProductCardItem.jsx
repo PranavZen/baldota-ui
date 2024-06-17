@@ -7,13 +7,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectWishlist } from "../../redux/selectors";
 import { toggleWishlist } from "../../redux/actions";
 import "../card/card.css";
-const ProductCardItem = ({ item, index, isWishlisted }) => {
+
+const ProductCardItem = ({ item, index, isWishlisted, onProductClick }) => {
   const dispatch = useDispatch();
   const wishlist = useSelector(selectWishlist);
 
   const handleClick = (index) => {
     dispatch(toggleWishlist(index));
   };
+
   const slug = item.slug
     ? item.slug
     : typeof item.slugUrl === "string"
@@ -49,13 +51,21 @@ const ProductCardItem = ({ item, index, isWishlisted }) => {
               <span>{item.offerPrice}% Off</span>
             </div>
           </div>
-          <Link to={`/products/${slug}`} rel="noopener noreferrer">
+          <Link
+            to={`/products/${slug}`}
+            rel="noopener noreferrer"
+            onClick={onProductClick}
+          >
             <div className="proImgWrap">
               <img src={item.productImage} alt={item.name} />
             </div>
           </Link>
         </div>
-        <Link to={`/products/${slug}`} rel="noopener noreferrer">
+        <Link
+          to={`/products/${slug}`}
+          rel="noopener noreferrer"
+          onClick={onProductClick}
+        >
           <div className="productDetailsWrap">
             <h6>{item.name}</h6>
             <p>{item.description}</p>
@@ -80,6 +90,7 @@ ProductCardItem.propTypes = {
   index: PropTypes.number.isRequired,
   isWishlisted: PropTypes.bool.isRequired,
   handleClick: PropTypes.func.isRequired,
+  onProductClick: PropTypes.func, 
 };
 
 export default ProductCardItem;

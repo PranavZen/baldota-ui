@@ -18,12 +18,15 @@ function Navbar() {
   const [activeTab, setActiveTab] = useState(
     uniqueTypes.length > 0 ? uniqueTypes[0] : ""
   );
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
   const dispatch = useDispatch();
   const wishlist = useSelector(selectWishlist);
 
   const handleClick = (index) => {
     dispatch(toggleWishlist(index));
   };
+
   const handleHideClick = () => {
     sethideBox(!hideBox);
     setShow(!show);
@@ -55,6 +58,35 @@ function Navbar() {
     acc[type] = singlepopulardata.filter((item) => item.type === type);
     return acc;
   }, {});
+
+  // Function to toggle the show/hide class
+  const handleProductClick = () => {
+    setShow(!show);
+  };
+
+  const totalItems = groupedProducts[activeTab]?.length || 0;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const getPaginatedItems = (items, currentPage, itemsPerPage) => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    return items.slice(startIndex, startIndex + itemsPerPage);
+  };
 
   return (
     <>
@@ -211,24 +243,56 @@ function Navbar() {
                         spanTitle="Products"
                       />
                     )}
-                    {groupedProducts[type].map((item, index) => {
-                      const isWishlisted = wishlist.includes(item.id);
-                      return (
-                        <div
-                          className="col-md-4 position-relative mb-4"
-                          key={index}
-                        >
-                          <ProductCardItem
+                    {getPaginatedItems(groupedProducts[type], currentPage, itemsPerPage).map(
+                      (item, index) => {
+                        const isWishlisted = wishlist.includes(item.id);
+                        return (
+                          <div
+                            className="col-md-4 position-relative mb-4"
                             key={index}
-                            item={item}
-                            index={item.id}
-                            isWishlisted={isWishlisted}
-                            handleClick={() => handleClick(item.id)}
-                          />
-                        </div>
-                      );
-                    })}
+                          >
+                            <ProductCardItem
+                              key={index}
+                              item={item}
+                              index={item.id}
+                              isWishlisted={isWishlisted}
+                              handleClick={() => handleClick(item.id)}
+                              onProductClick={handleProductClick}
+                            />
+                          </div>
+                        );
+                      }
+                    )}
                   </div>
+                  {totalPages > 1 && (
+                    <div className="pagination">
+                      <button
+                        className="prevBtn"
+                        onClick={handlePreviousPage}
+                        disabled={currentPage === 1}
+                      >
+                        Previous
+                      </button>
+                      {[...Array(totalPages).keys()].map((number) => (
+                        <button
+                          key={number + 1}
+                          className={`pageBtn ${
+                            currentPage === number + 1 ? "active" : ""
+                          }`}
+                          onClick={() => handlePageChange(number + 1)}
+                        >
+                          {number + 1}
+                        </button>
+                      ))}
+                      <button
+                        className="nextBtn"
+                        onClick={handleNextPage}
+                        disabled={currentPage === totalPages}
+                      >
+                        Next
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

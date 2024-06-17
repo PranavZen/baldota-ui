@@ -1,14 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import data from "../components/card/productData";
-import NewData from "../components/card/newProductData";
 import slugify from "slugify";
 import SectionTitle from "../components/commonProductSlider/SectionTitle";
 import { Helmet } from "react-helmet-async";
+import singlepopulardata from "../components/popularproducts/singlepopulardata";
 
 function ProductDetails() {
   const { slug } = useParams();
-  const allProducts = [...data, ...NewData];
+  const allProducts = [...singlepopulardata];
   const product = allProducts.find(
     (item) => slugify(item.slugUrl.replace("#", ""), { lower: true }) === slug
   );
@@ -24,7 +23,7 @@ function ProductDetails() {
   return (
     <section id="singleProductPage">
       <Helmet>
-        <title>Baldota | Product Details</title>
+        <title>Baldota | {product.name}</title>
       </Helmet>
       <h1>{product.name}</h1>
       <p>{product.description}</p>

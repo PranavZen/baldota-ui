@@ -17,6 +17,7 @@ import OurPartner from "../components/ourpartner/OurPartner";
 import Accordion from "../components/faqaccordion/Accordion";
 import NewsLetter from "../components/newsletter/NewsLetter";
 import { Helmet } from "react-helmet-async";
+import singlepopulardata from "../components/popularproducts/singlepopulardata";
 
 function HomePage() {
   const dispatch = useDispatch();
@@ -68,18 +69,20 @@ function HomePage() {
             <div className="col-lg-12 col-md-12 mx-auto">
               <SectionTitle title="Recent" spanTitle="Products" />
               <CommonSlider>
-                {data.map((item, index) => {
-                  const isWishlisted = wishlist.includes(index);
-                  return (
-                    <ProductCardItem
-                      key={index}
-                      item={item}
-                      index={index}
-                      isWishlisted={isWishlisted}
-                      handleClick={() => handleClick(index)}
-                    />
-                  );
-                })}
+                {singlepopulardata
+                  .filter((item) => item.tag === "recent-product")
+                  .map((item, index) => {
+                    const isWishlisted = wishlist.includes(index + data.length);
+                    return (
+                      <ProductCardItem
+                        key={index}
+                        item={item}
+                        index={index + data.length}
+                        isWishlisted={isWishlisted}
+                        handleClick={() => handleClick(index + data.length)}
+                      />
+                    );
+                  })}
               </CommonSlider>
             </div>
           </div>
@@ -105,18 +108,20 @@ function HomePage() {
             <div className="col-lg-12 col-md-12 mx-auto">
               <SectionTitle title="New" spanTitle="Products" />
               <CommonSlider>
-                {newProductData.map((item, index) => {
-                  const isWishlisted = wishlist.includes(index + data.length);
-                  return (
-                    <ProductCardItem
-                      key={index}
-                      item={item}
-                      index={index + data.length}
-                      isWishlisted={isWishlisted}
-                      handleClick={() => handleClick(index + data.length)}
-                    />
-                  );
-                })}
+                {singlepopulardata
+                  .filter((item) => item.tag === "new-product")
+                  .map((item, index) => {
+                    const isWishlisted = wishlist.includes(index + data.length);
+                    return (
+                      <ProductCardItem
+                        key={index}
+                        item={item}
+                        index={index + data.length}
+                        isWishlisted={isWishlisted}
+                        handleClick={() => handleClick(index + data.length)}
+                      />
+                    );
+                  })}
               </CommonSlider>
             </div>
           </div>

@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 function CommonSlider({ children }) {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     loop: true,
     slidesToShow: 4,
     slidesToScroll: 1,

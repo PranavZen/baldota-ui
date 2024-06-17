@@ -23,7 +23,7 @@ function Grid() {
                 <h4>{item.title}</h4>
                 <p className="commonPara">{item.description}</p>
               </div>
-              <RoundBtn
+              <RoundBtn 
                 rBtnLink={`/categories/${singleItem}`}
                 rBtnName={`Shop ${item.tagName}`}
                 color="#fff"

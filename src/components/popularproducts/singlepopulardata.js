@@ -13,6 +13,7 @@ const singlepopulardata = [
     url: "/Fittings",
     slugUrl: "Baldota- Tube Fittings",
     type: "Fittings",
+    tag: "new-product"
   },
   {
     id: 2,
@@ -39,6 +40,7 @@ const singlepopulardata = [
     url: "/Fittings",
     slugUrl: "Baldota- Weld Fittings",
     type: "Fittings",
+    tag: "new-product"
   },
   {
     id: 4,
@@ -52,6 +54,7 @@ const singlepopulardata = [
     url: "/Fittings",
     slugUrl: "Baldota- Bolte Fittings",
     type: "Fittings",
+    tag: "recent-product"
   },
   {
     id: 5,
@@ -65,6 +68,7 @@ const singlepopulardata = [
     url: "/Fittings",
     slugUrl: "Baldota- Tap Fittings",
     type: "Fittings",
+    tag: "new-product"
   },
 
   {
@@ -79,6 +83,7 @@ const singlepopulardata = [
     url: "/Valves",
     slugUrl: "Baldota- Weld Valves",
     type: "Valves",
+    tag: "recent-product"
   },
   {
     id: 10,
@@ -105,6 +110,7 @@ const singlepopulardata = [
     url: "/Valves",
     slugUrl: "Baldota- Weld Valves",
     type: "Valves",
+    tag: "recent-product"
   },
   {
     id: 12,
@@ -118,6 +124,7 @@ const singlepopulardata = [
     url: "/Valves",
     slugUrl: "Baldota- Weld Valves",
     type: "Valves",
+    tag: "new-product"
   },
   {
     id: 13,
@@ -144,6 +151,7 @@ const singlepopulardata = [
     url: "/Valves",
     slugUrl: "Baldota- Weld Valves",
     type: "Valves",
+    tag: "new-product"
   },
 
   {
@@ -159,6 +167,116 @@ const singlepopulardata = [
     slugUrl: "Baldota- Weld Valves",
     type: "Valves",
   },
+
+  {
+    id: 115,
+    name: "New Baldota- Tube Valves",
+    description: "1/16″ to 1 1/2″ and 2mm to 38mm",
+    longDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    price: 2000,
+    productImage: product1,
+    offerPrice: 23,
+    url: "/Valves",
+    slugUrl: "Baldota- Weld Valves",
+    type: "Valves",
+    tag: "new-product"
+  },
+  {
+    id: 116,
+    name: "New Baldota- Tube Valves",
+    description: "1/16″ to 1 1/2″ and 2mm to 38mm",
+    longDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    price: 2000,
+    productImage: product1,
+    offerPrice: 23,
+    url: "/Valves",
+    slugUrl: "Baldota- Weld Valves",
+    type: "Valves",
+  },
+  {
+    id: 117,
+    name: "New Baldota- Tube Valves",
+    description: "1/16″ to 1 1/2″ and 2mm to 38mm",
+    longDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    price: 2000,
+    productImage: product1,
+    offerPrice: 23,
+    url: "/Valves",
+    slugUrl: "Baldota- Weld Valves",
+    type: "Valves",
+    tag: "recent-product"
+  },
+  {
+    id: 118,
+    name: "New Baldota- Tube Valves",
+    description: "1/16″ to 1 1/2″ and 2mm to 38mm",
+    longDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    price: 2000,
+    productImage: product1,
+    offerPrice: 23,
+    url: "/Valves",
+    slugUrl: "Baldota- Weld Valves",
+    type: "Valves",
+  },
+  {
+    id: 119,
+    name: "New Baldota- Tube Valves",
+    description: "1/16″ to 1 1/2″ and 2mm to 38mm",
+    longDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    price: 2000,
+    productImage: product1,
+    offerPrice: 23,
+    url: "/Valves",
+    slugUrl: "Baldota- Weld Valves",
+    type: "Valves",
+    tag: "new-product"
+  },
+  {
+    id: 120,
+    name: "New Baldota- Tube Valves",
+    description: "1/16″ to 1 1/2″ and 2mm to 38mm",
+    longDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    price: 2000,
+    productImage: product1,
+    offerPrice: 23,
+    url: "/Valves",
+    slugUrl: "Baldota- Weld Valves",
+    type: "Valves",
+  },
+  {
+    id: 121,
+    name: "New Baldota- Tube Valves",
+    description: "1/16″ to 1 1/2″ and 2mm to 38mm",
+    longDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    price: 2000,
+    productImage: product1,
+    offerPrice: 23,
+    url: "/Valves",
+    slugUrl: "Baldota- Weld Valves",
+    type: "Valves",
+  },
+  {
+    id: 122,
+    name: "New Baldota- Tube Valves",
+    description: "1/16″ to 1 1/2″ and 2mm to 38mm",
+    longDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    price: 2000,
+    productImage: product1,
+    offerPrice: 23,
+    url: "/Valves",
+    slugUrl: "Baldota- Weld Valves",
+    type: "Valves",
+  },
+
+
   {
     id: 16,
     name: "New Baldota- Tube Manifolds",
@@ -184,6 +302,7 @@ const singlepopulardata = [
     url: "/Manifolds",
     slugUrl: "Baldota- Weld Manifolds",
     type: "Manifolds",
+    tag: "recent-product"
   },
   {
     id: 18,
@@ -197,6 +316,7 @@ const singlepopulardata = [
     url: "/Manifolds",
     slugUrl: "Baldota- Weld Manifolds",
     type: "Manifolds",
+    tag: "new-product"
   },
   {
     id: 19,
@@ -210,6 +330,7 @@ const singlepopulardata = [
     url: "/Manifolds",
     slugUrl: "Baldota- Weld Manifolds",
     type: "Manifolds",
+    tag: "new-product"
   },
 ];
 

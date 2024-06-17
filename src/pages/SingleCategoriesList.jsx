@@ -7,6 +7,8 @@ import { selectWishlist } from "../redux/selectors";
 import { toggleWishlist } from "../redux/actions";
 import ProductCardItem from "../components/card/ProductCardItem";
 import SectionTitle from "../components/commonProductSlider/SectionTitle";
+import Breadcrumb from "../components/Breadcrumb";
+import { Helmet } from "react-helmet-async";
 
 function SingleCategoriesList() {
   const dispatch = useDispatch();
@@ -35,10 +37,14 @@ function SingleCategoriesList() {
 
   return (
     <section id="singleProductPage">
+      <Helmet>
+        <title>Baldota | {product.type}</title>
+      </Helmet>
       <div className="container">
+        <Breadcrumb />
         <div className="row">
           {filteredProducts.length > 0 && (
-            <SectionTitle
+            <SectionTitle 
               title={filteredProducts[0].type}
               spanTitle="Products"
             />
