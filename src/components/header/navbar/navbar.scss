@@ -1,6 +1,6 @@
 @import "../../../assets/scss/media";
 
-.navbar{
+.navbar {
   width: 100%;
 }
 .custNav {
@@ -30,16 +30,13 @@
       display: none;
     }
   }
- 
+
   .navbar-collapse {
     .navbar-nav {
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      @include d-desktop {
-        width: 57%;
-        margin: 0 0 0 auto;
-      }
+
       .nav-item {
         &.cartMenu {
           &::after {
@@ -52,6 +49,9 @@
             background: #cbcbcb;
             @include d-desktop {
               right: 5.2%;
+            }
+            @include mid-991-tab{
+              content: none;
             }
           }
         }
@@ -90,24 +90,38 @@
 }
 
 .allProductsDisplayBox {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   position: absolute;
   width: 90.5%;
   height: 53.9rem;
   transform: translateX(-50%);
   z-index: 3;
-  border-radius: .3rem;
+  border-radius: 0.6rem;
   overflow: hidden;
-  .tabsWrap{
+  box-shadow: 0px 0px 6px -2px #000;
+  .tabsWrap {
     display: flex;
     justify-content: space-between;
-    .nav-pills{
-      flex-direction: column;
+    position: relative;
+    .closeBtn {
+      position: absolute;
+      right: 2.1rem;
+      top: 1rem;
+      cursor: pointer;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-pills {
+      // flex-direction: column;
       width: 20%;
       height: 100%;
       max-height: 53.9rem;
       overflow-y: auto;
-      border-right: .1rem solid #8d8d8d;
+      gap: 0.5rem;
       &::-webkit-scrollbar {
         width: 16px;
         height: 16px;
@@ -132,11 +146,73 @@
       &::-webkit-scrollbar-corner {
         background: #e3a835;
       }
+      .nav-link {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 2rem;
+        height: 7.7rem;
+        border-radius: 0;
+        border: 0;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #000000;
+        position: relative;
+        background-color: #ebebeb;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 0.6rem;
+          height: 100%;
+          background-color: #dddddd;
+        }
+        &.active {
+          background-color: #007078;
+          color: #f8f8f8;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0.6rem;
+            height: 100%;
+            background-color: #ffa700;
+          }
+        }
+        &:hover {
+          background-color: #007078;
+          color: #fff;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0.6rem;
+            height: 100%;
+            background-color: #ffa700;
+          }
+        }
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 1.5rem;
+          background-color: #f1f1f1;
+          border-radius: 0.5rem;
+          img {
+            height: 6rem;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
     }
-    .tab-content{
+    .tab-content {
       width: 80%;
       height: 100%;
-      padding: 2rem;
+      padding: 2rem 3rem 0 1rem;
       max-height: 53.9rem;
       overflow-y: auto;
       &::-webkit-scrollbar {
@@ -172,5 +248,55 @@
   &.hide {
     left: -50%;
     transition: left 0.4s ease;
+  }
+}
+
+#navbarTogglerDemo02 {
+  &.navbar-collapse {
+    @include mid-991-tab {
+      background: #171a26;
+      box-shadow: 0 0 87px 0 rgba(0, 0, 0, 0.09);
+      display: block;
+      height: 100%;
+      left: -100%;
+      overflow-y: auto;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 30px;
+      position: fixed;
+      top: 0;
+      transition: all 0.2s cubic-bezier(0, 0, 0.2, 1) 0.1s !important;
+      width: 50%;
+      z-index: 999999;
+    }
+    @include mid-991-tab {
+      width: 80%;
+    }
+    &.show {
+      left: 0;
+      .navbar-nav {
+        .nav-item {
+          padding-bottom: 1.5rem;
+          &:last-child {
+            border-bottom: 0;
+          }
+          .nav-link {
+            justify-content: space-between;
+            font-size: 2rem;
+            color: unset;
+            position: relative;
+            &:hover {
+              color: #2276b9;
+              @include mid-991-tab {
+                color: #fff;
+              }
+            }
+            @include mid-991-tab {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
 }

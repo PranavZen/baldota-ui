@@ -11,6 +11,7 @@ import { toggleWishlist } from "../redux/actions";
 import OurPartner from "../components/ourpartner/OurPartner";
 import OurExpertise from "../components/expertise/OurExpertise";
 import WhoWeAre from "../components/whoweare/WhoWeAre";
+import { Helmet } from "react-helmet-async";
 
 function AboutUs() {
   const dispatch = useDispatch();
@@ -21,6 +22,38 @@ function AboutUs() {
   };
   return (
     <>
+      <Helmet>
+        <title>Baldota | About Us</title>
+        <meta
+          name="description"
+          content="This is the About Us page of our website."
+        />
+        <meta name="keywords" content="About Us, main, index" />
+        <meta name="author" content="Author Name" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="About Us Page" />
+        <meta
+          property="og:description"
+          content="This is the About Us page of our website."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.example.com/about" />
+        <meta
+          property="og:image"
+          content="https://www.example.com/About Us-image.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us Page" />
+        <meta
+          name="twitter:description"
+          content="This is the About Us page of our website."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.example.com/About Us-image.jpg"
+        />
+        <link rel="canonical" href="https://www.example.com/about" />
+      </Helmet>
       <InnerBanner mainText="About" subText="Baldota" bgImg={innerBanner1} />
       <WhoWeAre />
       <OurExpertise />

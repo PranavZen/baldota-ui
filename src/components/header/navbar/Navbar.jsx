@@ -14,6 +14,7 @@ import SectionTitle from "../../commonProductSlider/SectionTitle";
 function Navbar() {
   const uniqueTypes = [...new Set(singlepopulardata.map((item) => item.type))];
   const [show, setShow] = useState(false);
+  const [hideBox, sethideBox] = useState(false);
   const [activeTab, setActiveTab] = useState(
     uniqueTypes.length > 0 ? uniqueTypes[0] : ""
   );
@@ -22,6 +23,10 @@ function Navbar() {
 
   const handleClick = (index) => {
     dispatch(toggleWishlist(index));
+  };
+  const handleHideClick = () => {
+    sethideBox(!hideBox);
+    setShow(!show);
   };
 
   useEffect(() => {
@@ -35,6 +40,16 @@ function Navbar() {
   const showAlertMessage = () => {
     setShow((prevShow) => !prevShow);
   };
+
+  const typeToImageMap = uniqueTypes.reduce((acc, type) => {
+    const representativeProduct = singlepopulardata.find(
+      (item) => item.type === type
+    );
+    if (representativeProduct) {
+      acc[type] = representativeProduct.productImage;
+    }
+    return acc;
+  }, {});
 
   const groupedProducts = uniqueTypes.reduce((acc, type) => {
     acc[type] = singlepopulardata.filter((item) => item.type === type);
@@ -132,6 +147,20 @@ function Navbar() {
         }
       >
         <div className="tabsWrap">
+          <span className="closeBtn" onClick={handleHideClick}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <path
+                d="M9.16242 5.66242L7.82483 7L9.16242 8.33758C9.3905 8.56567 9.3905 8.93433 9.16242 9.16242C9.04867 9.27617 8.89933 9.33333 8.75 9.33333C8.60067 9.33333 8.45133 9.27617 8.33758 9.16242L7 7.82483L5.66242 9.16242C5.54867 9.27617 5.39933 9.33333 5.25 9.33333C5.10067 9.33333 4.95133 9.27617 4.83758 9.16242C4.6095 8.93433 4.6095 8.56567 4.83758 8.33758L6.17517 7L4.83758 5.66242C4.6095 5.43433 4.6095 5.06567 4.83758 4.83758C5.06567 4.6095 5.43433 4.6095 5.66242 4.83758L7 6.17517L8.33758 4.83758C8.56567 4.6095 8.93433 4.6095 9.16242 4.83758C9.3905 5.06567 9.3905 5.43433 9.16242 5.66242ZM14 7C14 10.8599 10.8599 14 7 14C3.14008 14 0 10.8599 0 7C0 3.14008 3.14008 0 7 0C10.8599 0 14 3.14008 14 7ZM12.8333 7C12.8333 3.7835 10.2165 1.16667 7 1.16667C3.7835 1.16667 1.16667 3.7835 1.16667 7C1.16667 10.2165 3.7835 12.8333 7 12.8333C10.2165 12.8333 12.8333 10.2165 12.8333 7Z"
+                fill="#007078"
+              ></path>
+            </svg>
+          </span>
           <div
             className="nav nav-pills"
             id="v-pills-tab"
@@ -151,6 +180,13 @@ function Navbar() {
                 key={index}
                 onClick={() => setActiveTab(type)}
               >
+                <span>
+                  <img
+                    src={typeToImageMap[type]}
+                    alt={type}
+                    className="nav-type-image"
+                  />
+                </span>
                 {type}
               </button>
             ))}

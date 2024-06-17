@@ -4,6 +4,7 @@ import data from "../components/card/productData";
 import NewData from "../components/card/newProductData";
 import slugify from "slugify";
 import SectionTitle from "../components/commonProductSlider/SectionTitle";
+import { Helmet } from "react-helmet-async";
 
 function ProductDetails() {
   const { slug } = useParams();
@@ -22,6 +23,9 @@ function ProductDetails() {
 
   return (
     <section id="singleProductPage">
+      <Helmet>
+        <title>Baldota | Product Details</title>
+      </Helmet>
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>{product.longDescription}</p>
