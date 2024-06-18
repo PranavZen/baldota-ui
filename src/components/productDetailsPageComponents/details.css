@@ -1,0 +1,107 @@
+#singleProductPage {
+  padding: 8rem 0;
+}
+#singleProductPage .row {
+  row-gap: 1.5rem;
+}
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin-bottom: 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.leftBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f6f6;
+  padding: 3rem;
+}
+
+.rightBox {
+  height: 100%;
+  padding-left: 3rem;
+}
+.rightBox h4 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+.rightBox p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #656565;
+  margin-bottom: 1rem;
+}
+.rightBox .qtBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+.rightBox .qtBox button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  background-color: #007078;
+}
+.rightBox .qtBox button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rightBox .qtBox button:last-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.rightBox .qtBox button span {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.rightBox .qtBox .qtCountBox {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #000;
+  display: flex;
+  height: 4.5rem;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.1rem solid #007078;
+  border-bottom: 0.1rem solid #007078;
+  width: 6rem;
+}
+.rightBox .btnsWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.rightBox .descriptionBox h4 {
+  font-size: 2rem;
+}
+.rightBox .descriptionBox p {
+  font-size: 1.6rem;
+  text-align: justify;
+}/*# sourceMappingURL=details.css.map */

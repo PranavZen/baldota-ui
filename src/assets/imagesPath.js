@@ -1,5 +1,5 @@
 export { default as logo } from "../assets/images/logo.svg";
-export { default as product1 } from "../assets/images/product1.png";
+export { default as product1 } from "../assets/images/dummy-product.jpg";
 export { default as smallproImg } from "../assets/images/small-pro-img.png";
 export { default as bannerImg } from "../assets/images/bannerimg.png";
 export { default as grid1 } from "../assets/images/grid1.png";

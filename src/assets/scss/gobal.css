@@ -359,34 +359,10 @@ input {
   }
 }
 
-#singleProductPage {
-  padding: 8rem 0;
-}
-#singleProductPage .row {
-  row-gap: 1.5rem;
-}
-
 .emptyPage {
   height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.breadcrumb {
-  background: none;
-  padding: 0;
-  margin-bottom: 3rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-  content: "/";
-}
-
-.breadcrumb-item a {
-  text-decoration: none;
-  color: #000;
 }/*# sourceMappingURL=gobal.css.map */

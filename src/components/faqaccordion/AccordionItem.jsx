@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleAccordian } from "../../redux/actions";
 import { showAccordianState } from "../../redux/selectors";
+import { toggleAccordian } from "../../redux/actions";
 
 function AccordionItem({ item, index }) {
   const dispatch = useDispatch();

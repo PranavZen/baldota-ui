@@ -71,7 +71,7 @@ const ProductCardItem = ({ item, index, isWishlisted, onProductClick }) => {
             <p>{item.description}</p>
           </div>
         </Link>
-        <div className="bottomBoxWrap">
+        {/* <div className="bottomBoxWrap">
           <h6>₹ {item.price}/-</h6>
           <SquareBtn
             sBtnName="All Products"
@@ -79,7 +79,7 @@ const ProductCardItem = ({ item, index, isWishlisted, onProductClick }) => {
             color="#000000"
             className="iconSvgWrap cartIcon"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

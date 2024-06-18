@@ -37,7 +37,7 @@ function SingleCategoriesList() {
 
   return (
     <section id="singleProductPage">
-      <Helmet>
+      <Helmet> 
         <title>Baldota | {product.type}</title>
       </Helmet>
       <div className="container">
