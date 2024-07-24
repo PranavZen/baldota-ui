@@ -98,7 +98,7 @@ function Navbar() {
                 <Link className="navbar-brand" to="/">
                   <img src={logo} alt="Baldota Logo" className="img-fluid" />
                 </Link>
-                <SquareBtn
+                <SquareBtn 
                   sBtnName="All Products"
                   btnBgColor="#007078"
                   color="#fff"
@@ -129,8 +129,8 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="#">
-                    News
+                  <Link className="nav-link" to="/products">
+                    Produtcs
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -248,7 +248,7 @@ function Navbar() {
                         const isWishlisted = wishlist.includes(item.id);
                         return (
                           <div
-                            className="col-md-4 position-relative mb-4"
+                            className="col-lg-6 col-md-6 col-12 position-relative mb-4"
                             key={index}
                           >
                             <ProductCardItem

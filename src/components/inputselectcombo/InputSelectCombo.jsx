@@ -21,7 +21,7 @@ function InputSelectCombo() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="comboInputWrap">
-        <select
+        {/* <select
           ref={selectRef}
           value={selectedOptionText ? selectedOptionText : "default"}
           onChange={handleSelectChange}
@@ -39,7 +39,7 @@ function InputSelectCombo() {
           <option value="Option 7">Flushface ORB</option>
           <option value="Option 8">Adapters & Fittings</option>
         </select>
-        <span className="deviderLine"></span>
+        <span className="deviderLine"></span> */}
         <input
           type="text"
           ref={inputRef}

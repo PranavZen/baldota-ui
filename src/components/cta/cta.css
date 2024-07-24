@@ -17,6 +17,11 @@
     font-size: 1.4rem;
   }
 }
+@media (max-width: 767px) {
+  .actionBtn {
+    display: none;
+  }
+}
 .actionBtn:focus {
   background-color: #00575d !important;
 }

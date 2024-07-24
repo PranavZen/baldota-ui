@@ -22,17 +22,14 @@
   color: #000;
 }
 
-.leftBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f9f6f6;
-  padding: 3rem;
-}
-
 .rightBox {
   height: 100%;
   padding-left: 3rem;
+}
+@media (max-width: 767px) {
+  .rightBox {
+    padding-left: 0;
+  }
 }
 .rightBox h4 {
   font-size: 2.4rem;
@@ -104,4 +101,103 @@
 .rightBox .descriptionBox p {
   font-size: 1.6rem;
   text-align: justify;
+}
+
+#specificationSection {
+  margin-top: 4rem;
+}
+#specificationSection .nav-pills {
+  border-bottom: 0.1rem solid #ccc;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+#specificationSection .nav-pills .nav-item .nav-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5b5b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+#specificationSection .nav-pills .nav-item .nav-link.active, #specificationSection .nav-pills .nav-item .nav-link:hover {
+  background-color: #007078;
+  color: #fff;
+}
+#specificationSection .tab-content {
+  padding: 1.5rem 0;
+}
+#specificationSection .tab-content .table-responsive .table {
+  width: 50%;
+}
+@media (max-width: 834px) {
+  #specificationSection .tab-content .table-responsive .table {
+    width: 100%;
+  }
+}
+#specificationSection .tab-content .table-responsive .table tr:nth-child(odd) {
+  background-color: #efefef;
+}
+#specificationSection .tab-content .table-responsive .table tr td {
+  padding: 1rem 1rem;
+}
+#specificationSection .tab-content .table-responsive .table tr td:first-child {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  #specificationSection .tab-content .table-responsive .table tr td:first-child {
+    font-size: 1.4rem;
+  }
+}
+#specificationSection .tab-content .table-responsive .table tr td:last-child {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  #specificationSection .tab-content .table-responsive .table tr td:last-child {
+    font-size: 1.2rem;
+  }
+}
+#specificationSection .tab-content .downloadListWrap .downloadUl {
+  padding-left: 3.5rem;
+}
+#specificationSection .tab-content .downloadListWrap .downloadUl .mainList {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  list-style: decimal;
+}
+@media (max-width: 767px) {
+  #specificationSection .tab-content .downloadListWrap .downloadUl .mainList {
+    font-size: 1.6rem;
+  }
+}
+#specificationSection .tab-content .downloadListWrap .downloadUl .mainList:last-child {
+  margin-bottom: 0;
+}
+#specificationSection .tab-content .downloadListWrap .downloadUl .mainList ul {
+  padding-left: 3.5rem;
+  margin-top: 0.5rem;
+}
+#specificationSection .tab-content .downloadListWrap .downloadUl .mainList ul .subList {
+  margin-bottom: 0.8rem;
+  list-style: circle;
+}
+#specificationSection .tab-content .downloadListWrap .downloadUl .mainList ul .subList:last-child {
+  margin-bottom: 0;
+}
+#specificationSection .tab-content .downloadListWrap .downloadUl .mainList ul .subList a {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  #specificationSection .tab-content .downloadListWrap .downloadUl .mainList ul .subList a {
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=details.css.map */

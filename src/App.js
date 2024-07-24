@@ -8,6 +8,7 @@ import ProductListing from "./pages/ProductListing";
 import AboutUs from "./pages/AboutUs";
 import SingleCategoriesList from "./pages/SingleCategoriesList";
 import { HelmetProvider } from "react-helmet-async";
+import FliterAllProduct from "./pages/FliterAllProduct";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             element={<SingleCategoriesList />}
           />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/products-filter" element={<FliterAllProduct />} />
         </Routes>
         <Footer />
       </BrowserRouter>

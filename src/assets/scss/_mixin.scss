@@ -1,4 +1,5 @@
 @import "./media";
+
 @mixin squareBtn {
   .actionBtn {
     width: fit-content;
@@ -12,8 +13,11 @@
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1;
-    @include d-desktop{
+    @include d-desktop {
       font-size: 1.4rem;
+    }
+    @include x-767-tablet {
+      display: none;
     }
     &:focus {
       background-color: #00575d !important;
@@ -60,7 +64,7 @@
     font-weight: 600;
     gap: 1rem;
     line-height: 0;
-    @include d-desktop{
+    @include d-desktop {
       font-size: 1.4rem;
     }
     .arrow {
@@ -76,11 +80,12 @@
     font-size: 1.6rem;
     font-weight: 400;
     color: #656565;
-    @include d-desktop{
+    @include d-desktop {
       font-size: 1.4rem;
     }
   }
 }
+
 @mixin commonTitle {
   .sectionTitle {
     font-size: 3rem;
@@ -90,7 +95,7 @@
     .highlightText {
       color: #ffa700;
     }
-    @include x-767-tablet{
+    @include x-767-tablet {
       font-size: 2.4rem;
     }
   }
@@ -106,7 +111,7 @@
         .slick-track {
           .slick-slide {
             padding: 0 10px;
-            .ddd{
+            .ddd {
               position: relative;
             }
           }
@@ -145,9 +150,26 @@
     span {
       font-size: 1.6rem;
       font-weight: 600;
-      @include d-desktop{
+      @include d-desktop {
         font-size: 1.4rem;
       }
+    }
+  }
+}
+
+@mixin commonSelect {
+  .form-select {
+    height: 4.5rem;
+    border: 0.2rem solid #007078;
+    padding-left: 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+      box-shadow: none;
     }
   }
 }

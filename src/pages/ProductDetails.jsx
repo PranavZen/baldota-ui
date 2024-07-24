@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectWishlist } from "../redux/selectors";
 import { toggleWishlist } from "../redux/actions";
 import "../components/productDetailsPageComponents/details.css";
+import SpecificationTabs from "../components/productDetailsPageComponents/SpecificationTabs";
 
 function ProductDetails() {
   const { singleItem } = useParams();
@@ -55,6 +56,13 @@ function ProductDetails() {
             />
           </div>
         </div>
+        <section id="specificationSection">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-12">
+              <SpecificationTabs />
+            </div>
+          </div>
+        </section>
         <div id="productSliderSection" className="productSliderSection pb-5">
           <div className="container">
             <div className="row">

@@ -39,6 +39,17 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .custNav .navbar-collapse .navbar-nav {
+    margin: 0 0 auto auto;
+    width: 60%;
+  }
+}
+@media (max-width: 834px) {
+  .custNav .navbar-collapse .navbar-nav {
+    width: 100%;
+  }
+}
 .custNav .navbar-collapse .navbar-nav .nav-item.cartMenu::after {
   content: "";
   position: absolute;
@@ -101,6 +112,11 @@
   overflow: hidden;
   box-shadow: 0px 0px 6px -2px #000;
 }
+@media (max-width: 834px) {
+  .allProductsDisplayBox {
+    width: 100%;
+  }
+}
 .allProductsDisplayBox .tabsWrap {
   display: flex;
   justify-content: space-between;
@@ -124,6 +140,11 @@
   max-height: 53.9rem;
   overflow-y: auto;
   gap: 0.5rem;
+}
+@media (max-width: 834px) {
+  .allProductsDisplayBox .tabsWrap .nav-pills {
+    width: 30%;
+  }
 }
 .allProductsDisplayBox .tabsWrap .nav-pills::-webkit-scrollbar {
   width: 16px;

@@ -39,7 +39,7 @@ body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  &.active{
+  &.active {
     overflow: hidden;
   }
 }
@@ -276,4 +276,194 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#filterPage {
+  padding: 6rem 0;
+  @include commonSelect;
+  .row {
+    @include md-tablet {
+      row-gap: 1.5rem;
+    }
+  }
+  .filter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 4rem 0 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 0.1rem solid #ccc;
+    @include md-tablet{
+      margin: 4rem 0 2rem;
+      padding-bottom: 2rem;
+    }
+    .filterTitle {
+      height: 4.5rem;
+      display: flex;
+      align-items: center;
+      p {
+        @include commonPara;
+      }
+      .commonPara {
+        font-size: 1.8rem;
+        font-weight: 600;
+
+        @include md-tablet {
+          font-size: 1.6rem;
+        }
+        @include x-767-tablet{
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .menusWraps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      height: 4.5rem;
+      @include x-767-tablet{
+        gap: .5rem;
+        height: 3.5rem;
+      }
+      .menuBoxItem {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #5b5b5b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.5rem;
+        width: fit-content;
+        padding: 0 1rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        @include md-tablet{
+          font-size: 1.4rem;
+        }
+        @include x-767-tablet{
+          font-size: 1.2rem;
+          height: 3.5rem;
+        }
+        &:hover {
+          background-color: #007078;
+          color: #fff;
+        }
+        &.active {
+          background-color: #007078;
+          color: #fff;
+        }
+      }
+    }
+    .allBtn {
+      display: flex;
+      align-items: center;
+      height: 4.5rem;
+      width: fit-content;
+      padding: 0 1rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      @include md-tablet{
+        font-size: 1.4rem;
+      }
+      .de{
+        @include x-767-tablet{
+          display: none;
+        }
+      }
+    }
+  }
+  .filterdItemsListing {
+    .ddd {
+      position: relative;
+    }
+  }
+  .selectedMenusWrap {
+    border-bottom: 0.1rem solid #ccc;
+    margin-bottom: 4rem;
+    .selectedMenusRows {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 4rem;
+      @include md-tablet{
+        margin-bottom: 2rem;
+      }
+      .selectedBox {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #5b5b5b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.5rem;
+        width: fit-content;
+        padding: 0 1rem;
+        border-radius: 0.4rem;
+        background-color: #007078;
+        color: #fff;
+        @include md-tablet{
+          font-size: 1.4rem;
+        }
+        @include x-767-tablet{
+          font-size: 1.2rem;
+          height: 3.5rem;
+        }
+      }
+      .clearBtn {
+        display: flex;
+        align-items: center;
+        height: 4.5rem;
+        width: fit-content;
+        padding: 0 1rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 0 1rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        background-color: red;
+        color: #fff;
+        gap: 1rem;
+        @include md-tablet{
+          font-size: 1.4rem;
+        }
+        @include x-767-tablet{
+          font-size: 1.2rem;
+          height: 3.5rem;
+        }
+        i{
+          @include md-tablet{
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#mainProductListSection {
+  padding-top: 8rem;
+  .sectionTitle {
+    text-align: center;
+  }
+  .row {
+    row-gap: 1.5rem;
+  }
+  .wraps {
+    border: 0.1rem solid #007078;
+    border-radius: 0.5rem;
+    background-color: #eef7ff;
+    padding: 1rem;
+    .typeText {
+      padding-top: 1.2rem;
+      h6 {
+        font-size: 1.8rem;
+        color: #1c2c2d;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+    }
+  }
 }
