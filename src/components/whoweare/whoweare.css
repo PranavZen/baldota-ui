@@ -1,6 +1,11 @@
 #whoWeAreSection {
   padding: 8rem 0;
 }
+@media (max-width: 767px) {
+  #whoWeAreSection {
+    padding: 2rem 0 4rem;
+  }
+}
 #whoWeAreSection .leftBox .commonPara {
   font-size: 1.6rem;
   font-weight: 400;
@@ -31,6 +36,11 @@
   position: relative;
   height: 100%;
   width: 100%;
+}
+@media (max-width: 834px) {
+  #whoWeAreSection .rightBox {
+    display: none;
+  }
 }
 #whoWeAreSection .rightBox span {
   position: absolute;

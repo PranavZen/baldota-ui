@@ -16,8 +16,13 @@
     @include d-desktop {
       font-size: 1.4rem;
     }
-    @include x-767-tablet {
-      display: none;
+    
+    .iconSvgWrap{
+      svg{
+        @include x-767-tablet {
+          height: 1.4rem;
+        }
+      }
     }
     &:focus {
       background-color: #00575d !important;

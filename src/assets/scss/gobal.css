@@ -370,6 +370,11 @@ input {
 #filterPage {
   padding: 6rem 0;
 }
+@media (max-width: 767px) {
+  #filterPage {
+    padding: 2rem 0 4rem;
+  }
+}
 #filterPage .form-select {
   height: 4.5rem;
   border: 0.2rem solid #007078;

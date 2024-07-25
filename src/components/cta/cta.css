@@ -18,8 +18,8 @@
   }
 }
 @media (max-width: 767px) {
-  .actionBtn {
-    display: none;
+  .actionBtn .iconSvgWrap svg {
+    height: 1.4rem;
   }
 }
 .actionBtn:focus {

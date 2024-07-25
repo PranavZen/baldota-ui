@@ -9,6 +9,11 @@
   height: 20.6rem;
   position: relative;
 }
+@media (max-width: 767px) {
+  #banner {
+    height: 10rem;
+  }
+}
 #banner::before {
   content: "";
   position: absolute;

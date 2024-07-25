@@ -1,6 +1,10 @@
 @import "../../assets/scss/mixin";
+@import "../../assets/scss/media";
 #whoWeAreSection {
   padding: 8rem 0;
+  @include x-767-tablet{
+    padding: 2rem 0 4rem;
+  }
   .leftBox {
     @include commonPara;
     .commonPara {
@@ -26,6 +30,9 @@
     position: relative;
     height: 100%;
     width: 100%;
+    @include md-tablet{
+      display: none;
+    }
     span {
       position: absolute;
     }

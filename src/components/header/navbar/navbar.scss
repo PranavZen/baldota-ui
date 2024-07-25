@@ -2,6 +2,19 @@
 
 .navbar {
   width: 100%;
+  .navbar-toggler {
+    border: 0;
+    background: transparent;
+    width: 3.8rem;
+    height: 3.8rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
 }
 .custNav {
   width: 100%;
@@ -13,6 +26,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .navbar-brand{
+      img{
+        @include md-tablet{
+          width: 90%;
+        }
+        @include x-767-tablet{
+          width: 80%;
+        }
+      }
+    }
   }
   .col-md-3 {
     @include d-desktop {
@@ -36,11 +59,11 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      @include d-desktop{
+      @include d-desktop {
         margin: 0 0 auto auto;
         width: 60%;
       }
-      @include md-tablet{
+      @include md-tablet {
         width: 100%;
       }
       .nav-item {
@@ -56,7 +79,7 @@
             @include d-desktop {
               right: 5.2%;
             }
-            @include mid-991-tab{
+            @include mid-991-tab {
               content: none;
             }
           }
@@ -105,13 +128,20 @@
   border-radius: 0.6rem;
   overflow: hidden;
   box-shadow: 0px 0px 6px -2px #000;
-  @include md-tablet{
+  @include md-tablet {
     width: 100%;
+    height: 100%;
+    min-height: 50rem;
+    overflow: auto;
   }
   .tabsWrap {
     display: flex;
     justify-content: space-between;
     position: relative;
+    @include x-767-tablet {
+      flex-direction: column;
+      padding-top: 4rem;
+    }
     .closeBtn {
       position: absolute;
       right: 2.1rem;
@@ -131,8 +161,11 @@
       max-height: 53.9rem;
       overflow-y: auto;
       gap: 0.5rem;
-      @include md-tablet{
+      @include md-tablet {
         width: 30%;
+      }
+      @include x-767-tablet {
+        width: 100%;
       }
       &::-webkit-scrollbar {
         width: 16px;
@@ -171,6 +204,11 @@
         color: #000000;
         position: relative;
         background-color: #ebebeb;
+        @include md-tablet {
+          font-size: 1.8rem;
+          height: 5.5rem;
+          justify-content: center;
+        }
         &::before {
           content: "";
           position: absolute;
@@ -213,6 +251,9 @@
           padding: 0 1.5rem;
           background-color: #f1f1f1;
           border-radius: 0.5rem;
+          @include x-767-tablet {
+            display: none;
+          }
           img {
             height: 6rem;
             width: 100%;
@@ -227,6 +268,10 @@
       padding: 2rem 3rem 0 1rem;
       max-height: 53.9rem;
       overflow-y: auto;
+      @include x-767-tablet {
+        width: 100%;
+        padding: 2rem 1rem 0 1rem;
+      }
       &::-webkit-scrollbar {
         width: 16px;
         height: 16px;
@@ -313,23 +358,23 @@
   }
 }
 
-.pagination{
+.pagination {
   padding: 2rem 0;
   justify-content: flex-end;
   gap: 1rem;
-  button{
+  button {
     background-color: #007078d0;
     color: #f8f8f8;
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     width: fit-content;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     font-size: 1.4rem;
     font-weight: 500;
-    &.active{
+    &.active {
       background-color: #004f54;
       color: #f8f8f8;
     }
-    &:hover{
+    &:hover {
       background-color: #007078;
       color: #f8f8f8;
     }
