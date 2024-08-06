@@ -46,23 +46,43 @@ function SpecificationTabs() {
               <tbody>
                 <tr>
                   <td>Body Material</td>
-                  <td>316 Stainless Steel</td>
+                  <td>Stainless Steel 316</td>
                 </tr>
                 <tr>
-                  <td>Port 1 Type</td>
-                  <td>Fractional Ferrule</td>
+                  <td>Port 1</td>
+                  <td>1/16" NPT</td>
                 </tr>
                 <tr>
-                  <td>Port 1 Size</td>
-                  <td>1/4 in.</td>
+                  <td>Port 2</td>
+                  <td>1/16" NPT</td>
                 </tr>
                 <tr>
-                  <td>Port 2 Type</td>
-                  <td>Fractional Ferrule</td>
+                  <td>Port 3</td>
+                  <td>-</td>
                 </tr>
                 <tr>
-                  <td>Port 2 Size</td>
-                  <td>1/4 in.</td>
+                  <td>Port 4</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>L</td>
+                  <td>1.01 (25.6)</td>
+                </tr>
+                <tr>
+                  <td>F</td>
+                  <td>0.31 ( 7.9)</td>
+                </tr>
+                <tr>
+                  <td>B</td>
+                  <td>0.38 ( 9.7)</td>
+                </tr>
+                <tr>
+                  <td>Bx</td>
+                  <td>0.38 ( 9.7)</td>
+                </tr>
+                <tr>
+                  <td>E</td>
+                  <td>0.12 ( 3.0)</td>
                 </tr>
               </tbody>
             </table>
